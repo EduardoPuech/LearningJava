@@ -6,27 +6,57 @@ public class EmpleadoUnaFuente { // todo en un uunico fichero fuente para probar
 
 	public static void main(String[] args) {
 
-		// instancio tres objetos de la clase empleado
-		Empleado empleado1 = new Empleado("Cesar de Echagüe", 25000, 2010, 03, 16); // enero es 00 pero le hemos dado
-																					// mes-1
-																					// luego esto seriia febrero.
-		Empleado empleado2 = new Empleado("Leonor de Acevedo", 24000, 2008, 01, 16);
-		Empleado empleado3 = new Empleado("Lupe de Torres", 26000, 2012, 02, 17);
+		// esto es la manera a pincho de hacerlo
+//		// instancio tres objetos de la clase empleado
+//		Empleado empleado1 = new Empleado("Cesar de Echagüe", 25000, 2010, 03, 16); // enero es 00 pero le hemos dado
+//		// mes-1, este es marzo ya que la cuarta posicioon es abril, abril - 1 = marzo.
+//		Empleado empleado2 = new Empleado("Leonor de Acevedo", 24000, 2008, 01, 16);
+//		Empleado empleado3 = new Empleado("Lupe de Torres", 26000, 2012, 02, 17);
+//
+//		// utilizo el meetodo subir el sueldo
+//		empleado1.subidaSueldo(20);
+//		empleado2.subidaSueldo(24);
+//		empleado3.subidaSueldo(16);
+//
+//		System.out.println("Nombre: " + empleado1.getNombre() + "\nSueldo actual: " + empleado1.getSueldo()
+//				+ "\nAnno de entrada en la empresa: " + empleado1.getAltaContrato());
+//		System.out.println("Nombre: " + empleado2.getNombre() + "\nSueldo actual: " + empleado2.getSueldo()
+//				+ "\nAnno de entrada en la empresa: " + empleado2.getAltaContrato());
+//		System.out.println("Nombre: " + empleado3.getNombre() + "\nSueldo actual: " + empleado3.getSueldo()
+//				+ "\nAnno de entrada en la empresa: " + empleado3.getAltaContrato());
 
-		// utilizo el meetodo subir el sueldo
-		empleado1.subidaSueldo(10);
-		empleado2.subidaSueldo(15);
-		empleado3.subidaSueldo(5);
+		// ahora lo vamos a hacer con un array para almacenar los empleados y un bucle
+		// for para subir el sueldo (y ver la informacioon en consola
 
-		System.out.println("Nombre: " + empleado1.getNombre() + "\nSueldo actual: " + empleado1.getSueldo()
-				+ "\nAnno de entrada en la empresa: " + empleado1.getAltaContrato());
-		System.out.println("Nombre: " + empleado2.getNombre() + "\nSueldo actual: " + empleado2.getSueldo()
-		+ "\nAnno de entrada en la empresa: " + empleado2.getAltaContrato());
-		System.out.println("Nombre: " + empleado3.getNombre() + "\nSueldo actual: " + empleado3.getSueldo()
-		+ "\nAnno de entrada en la empresa: " + empleado3.getAltaContrato());
+		Empleado[] misEmpleados = new Empleado[3]; // creo el array
+		misEmpleados[0] = new Empleado("Cesar de Echagüe", 25000, 2010, 03, 16);
+		misEmpleados[1] = new Empleado("Leonor de Acevedo", 24000, 2008, 01, 16);
+		misEmpleados[2] = new Empleado("Lupe de Torres", 26000, 2012, 02, 17);
+////		Empleado[] tusEmpleados = {("Cesar de Echagüe", 25000, 2010, 03, 16), ("Leonor de Acevedo", 24000, 2008, 01, 16),
+//		("Lupe de Torres", 26000, 2012, 02, 17)}; // Estaa mal aunque no see por quee.
+
+		// for para el aumento de sueldo
+		for (int i = 0; i < misEmpleados.length; i++) {
+			misEmpleados[i].subidaSueldo(15);
+		}
+		
+		//for each para el aumento
+		for (Empleado)
+		
+		//este for es para la impresioon
+//		for (int i = 0; i < misEmpleados.length; i++) {
+//			System.out.println(
+//					"Nombre: " + misEmpleados[i].getNombre() + "\nSueldo actual: " + misEmpleados[i].getSueldo()
+//							+ "\nAnno de entrada en la empresa: " + misEmpleados[i].getAltaContrato());
+//		}
+
+		//for each para impresioon
+		for (Empleado posiciones : misEmpleados) {
+			System.out.println("Nombre: " + posiciones.getNombre() + "\nSueldo actual: " + posiciones.getSueldo()
+					+ "\nAnno de entrada en la empresa: " + posiciones.getAltaContrato());
+		}
 
 	}
-
 }
 
 class Empleado { // creo a los empleados

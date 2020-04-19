@@ -46,6 +46,7 @@ public class MatricesArraysArreglos { // https://www.youtube.com/watch?v=UID_EKK
 		miMatriz[2] = -15;
 		miMatriz[3] = 92;
 		miMatriz[4] = 71;
+//		int[] miMatriz = { 5, 38, -15, 92, 71 };
 
 		// ver el valor de una posicioon concreta
 		// System.out.println("El valor en esta posicioon 3 es " + miMatriz[3]);
