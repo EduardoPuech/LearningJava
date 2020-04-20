@@ -7,8 +7,7 @@ public class TipoDatos { // https://www.youtube.com/watch?v=OS1F6VNA6hs&list=PLU
 		// DATOS PRIMITIVOS (int, byte...)
 		// VARIABLES (un espacio de memoria RAM donde se almacena un valor que puede
 		// cambiar (duh). (entero, bit, corto...)
-		// CONSTANTES (un espacio de la memoria en la que se almacena un valor fijo)
-		// final
+
 
 		// NUUMEROS ENTEROS
 
@@ -69,6 +68,17 @@ public class TipoDatos { // https://www.youtube.com/watch?v=OS1F6VNA6hs&list=PLU
 		 * 
 		 * + (une o concatena, se diferencia de la suma por contexto y sintaaxis)
 		 * 
+		 */
+		
+		/*
+		 * MODIFICADORES:
+		 * 
+		 * 
+		 * acceso: public/private (se puede, o no, usar desde otra clase
+		 * 
+		 * algo: static
+		 * 
+		 * "alterabilidad": final (variable o constante)
 		 */
 
 	}
