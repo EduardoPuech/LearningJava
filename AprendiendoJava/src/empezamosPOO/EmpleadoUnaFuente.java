@@ -2,7 +2,9 @@ package empezamosPOO;
 
 import java.util.*;
 
-public class EmpleadoUnaFuente { // todo en un uunico fichero fuente para probar todos los modelos
+public class EmpleadoUnaFuente { // todo en un uunico fichero fuente para probar todos los modelos. No confundir
+									// archivos.java (es uno) con archivos.class (que son dos ya que hay dos
+									// clases).
 
 	public static void main(String[] args) {
 
