@@ -5,8 +5,8 @@ import java.util.*;
 public class BucleForEach { // https://www.youtube.com/watch?v=NwztwM_xGgU&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=24
 
 	/*
-	 * Bucle incorporado a java para facilitar el recorrido de matrices Conocido
-	 * como bucle for each o forMejorado
+	 * Bucle incorporado a java para facilitar el recorrido de matrices, conocido
+	 * como bucle foreach o forMejorado y se usa principalmente para recorrer arrays
 	 */
 
 	/*
@@ -55,17 +55,17 @@ public class BucleForEach { // https://www.youtube.com/watch?v=NwztwM_xGgU&list=
 			System.out.println("Nombre del paiis: " + elementos); // en caso de que quisiese ordenar tendriia que crear
 																	// una variable como por ejempo un i++;
 		}
-		
+
 		for (int posicion = 0; posicion < matrizAleatorios.length; posicion++) {
-			
-			matrizAleatorios[posicion] = (int) (Math.random() *100);
+
+			matrizAleatorios[posicion] = (int) (Math.random() * 100);
 
 		}
-		
+
 		for (int numeros : matrizAleatorios) { // no necesitas meter rango
 
 			System.out.print(numeros + " "); // en caso de que quisiese ordenar tendriia que crear
-																	// una variable como por ejempo un i++;
+												// una variable como por ejempo un i++;
 		}
 
 	}

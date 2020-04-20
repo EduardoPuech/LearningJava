@@ -41,7 +41,8 @@ public class EmpleadoUnaFuente { // todo en un uunico fichero fuente para probar
 //		}
 
 		// for each para el aumento
-		for (Empleado aumento : misEmpleados) {
+		for (Empleado aumento : misEmpleados) { // le doy este nombre a la variable porque representa en cierta medida
+												// la funcioon del bucle.
 			aumento.subidaSueldo(15);
 		}
 
