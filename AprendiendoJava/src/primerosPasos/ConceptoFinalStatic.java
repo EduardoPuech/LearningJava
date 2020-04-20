@@ -18,7 +18,7 @@ public class ConceptoFinalStatic {
 	 * https://www.youtube.com/watch?v=QIV7FfXa-zY&list=
 	 * PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=37
 	 * 
-	 * STATIC altera el aambito, tanto de una variable como de un meetodo: hace que
+	 * STATIC (///) altera el aambito, tanto de una variable como de un meetodo: hace que
 	 * se pueda usar en toda la clase: en vez de que cada empleado tenga un id, el
 	 * propio programa tiene un id y por lo tanto cada vez que
 	 */
