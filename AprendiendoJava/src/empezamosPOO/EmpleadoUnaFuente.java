@@ -36,24 +36,26 @@ public class EmpleadoUnaFuente { // todo en un uunico fichero fuente para probar
 //		("Lupe de Torres", 26000, 2012, 02, 17)}; // Estaa mal aunque no see por quee.
 
 		// for para el aumento de sueldo
-		for (int i = 0; i < misEmpleados.length; i++) {
-			misEmpleados[i].subidaSueldo(15);
+//		for (int i = 0; i < misEmpleados.length; i++) {
+//			misEmpleados[i].subidaSueldo(15);
+//		}
+
+		// for each para el aumento
+		for (Empleado aumento : misEmpleados) {
+			aumento.subidaSueldo(15);
 		}
-		
-		//for each para el aumento
-		for (Empleado)
-		
-		//este for es para la impresioon
+
+		// este for es para la impresioon
 //		for (int i = 0; i < misEmpleados.length; i++) {
 //			System.out.println(
 //					"Nombre: " + misEmpleados[i].getNombre() + "\nSueldo actual: " + misEmpleados[i].getSueldo()
 //							+ "\nAnno de entrada en la empresa: " + misEmpleados[i].getAltaContrato());
 //		}
 
-		//for each para impresioon
-		for (Empleado posiciones : misEmpleados) {
-			System.out.println("Nombre: " + posiciones.getNombre() + "\nSueldo actual: " + posiciones.getSueldo()
-					+ "\nAnno de entrada en la empresa: " + posiciones.getAltaContrato());
+		// for each para impresioon
+		for (Empleado impresion : misEmpleados) {
+			System.out.println("Nombre: " + impresion.getNombre() + "\nSueldo actual: " + impresion.getSueldo()
+					+ "\nAnno de entrada en la empresa: " + impresion.getAltaContrato());
 		}
 
 	}
