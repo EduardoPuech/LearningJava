@@ -8,7 +8,6 @@ public class TipoDatos { // https://www.youtube.com/watch?v=OS1F6VNA6hs&list=PLU
 		// VARIABLES (un espacio de memoria RAM donde se almacena un valor que puede
 		// cambiar (duh). (entero, bit, corto...)
 
-
 		// NUUMEROS ENTEROS
 
 		byte bit; // 1 byte, desde -128 hasta 127
@@ -69,14 +68,16 @@ public class TipoDatos { // https://www.youtube.com/watch?v=OS1F6VNA6hs&list=PLU
 		 * + (une o concatena, se diferencia de la suma por contexto y sintaaxis)
 		 * 
 		 */
-		
+
 		/*
 		 * MODIFICADORES:
 		 * 
 		 * 
-		 * acceso: public/private (se puede, o no, usar desde otra clase
+		 * acceso: public/private (se puede, o no, usar desde otra clase)
 		 * 
-		 * algo: static
+		 * aambito: static. Tanto para variables como para meetodos (hace que se pueda,
+		 * o no, utilizar en toda la clase). No se pueden crear meetodos que llamen a la
+		 * variable estaatica, hay que utilizar el nombre de la clase: Clase.variable++;
 		 * 
 		 * "alterabilidad": final (variable o constante)
 		 */

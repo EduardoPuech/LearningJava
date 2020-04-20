@@ -12,6 +12,8 @@ public class InformacionJava {
 		// Comentar una linea ya escrita = Ctrl + /
 		// Deshacer = Ctrl + Z
 		// Rehacer = Ctrl + Y
+		// Cambio de nombre = F2
+		// Ejecutar = CTRL + F11
 
 		/*
 		 * PACKAGE
