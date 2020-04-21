@@ -4,7 +4,7 @@ public class MetodoStatic { // https://www.youtube.com/watch?v=V0wIZ-OglsY&list=
 
 	// Utilizo el coodigo sin comentarios de ConceptoFinalStatic
 
-	// El concepto del static para los meetodos es la misma que para las variables.
+	// El concepto del static para los meetodos es el mismo que para las variables.
 	// los meetodos static no pueden acceder a las variables de clase a no ser que
 	// la variable tambieen sea static.
 	// no actuan sobre objetos
