@@ -5,10 +5,10 @@ import java.util.GregorianCalendar;
 
 public class EmpleadoSobrecargaConstructores { // https://www.youtube.com/watch?v=_ZWcobe9afw&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=39
 
-	// *tilizo el coodigo sin comentarios de EmpleadoUnaFuente
+	// Utilizo el coodigo sin comentarios de EmpleadoUnaFuente
 
 	/*
-	 * una sobrecarga de constructores implica que una misma clase puede tenervarios
+	 * La sobrecarga de constructores implica que una misma clase puede tener varios
 	 * constructores. En caso de querer utilizarlo, la condicioon es que cada
 	 * constructor tenga distinto nuumero (y tipo) de argumentos.
 	 * 

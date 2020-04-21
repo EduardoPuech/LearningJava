@@ -82,8 +82,10 @@ public class InformacionJava {
 		/*
 		 * Errores
 		 * 
-		 * Tiempo de compilacioon: la sintaaxis estaa mal Tiempo de ejecucioon: la
-		 * sintaaxis estaa bien pero el programa estaa mal escrito
+		 * Tiempo de compilacioon: la sintaaxis estaa mal
+		 * 
+		 * Tiempo de ejecucioon: la sintaaxis estaa bien pero el programa estaa mal
+		 * escrito
 		 */
 
 		/*
@@ -118,6 +120,26 @@ public class InformacionJava {
 		refundicion = (int) a;
 
 		System.out.println(refundicion);
+
+		/*
+		 * SOBRECARGA
+		 * 
+		 * La sobrecarga es la existencia de maas de un constructor en una clase. Se
+		 * utiliza para iniciar objetos de manera distinta. Al utilizar el constructor,
+		 * para usar uno u otro lo que hay que hacer es dar el nuumero de argumentos que
+		 * pide cada uno.
+		 */
+
+		/*
+		 * HERENCIA
+		 * 
+		 * El concepto de la herencia en POO es muy parecido a la vida real: cuando hay
+		 * un clase dentro de otra la inferior (hija) puede usar todos los meetodosb y
+		 * caracteriisticas de la superior (padre). "Anidable" tantas veces como se haya
+		 * programado.
+		 * 
+		 * Es, ni maas ni menos, reutilizar el coodigo ya escrito.
+		 */
 
 	}
 }
