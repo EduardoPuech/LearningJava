@@ -6,7 +6,13 @@ public class MetodoStaticYSobrecarga { // https://www.youtube.com/watch?v=V0wIZ-
 
 	// El concepto del static para los meetodos es la misma que para las variables.
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { // el meetodo main es STATIC porque ya que todo programa de java al empezar
+												// a ejecutarse empieza por eel. Como a la hora de empezar no existe
+												// nada, el que se encarga de construir los objetos... es el main, main
+												// tiene que ser public y static para que se pueda llamar desde otras
+												// clases y lo puedan usar todas las clases. Si solo fuese public se le
+												// podriia llamar pero no usar.
+		// a su vez, el meetodo main recibe un array de tipo String con nombre args
 
 		Empleados empleado1 = new Empleados("Carlos");
 		Empleados empleado2 = new Empleados("Ana");
@@ -15,7 +21,7 @@ public class MetodoStaticYSobrecarga { // https://www.youtube.com/watch?v=V0wIZ-
 		empleado1.setSeccion("Informaatica");
 		System.out.println(empleado1.getEmpleado() + "\n" + empleado2.getEmpleado() + "\n" + empleado3.getEmpleado()
 				+ "\n" + empleado4.getEmpleado());
-		System.out.println(Empleados.getSiguienteId());
+		System.out.println(Empleados.getSiguienteId()); // al ser static se utiliza el nombre de la clase
 	}
 
 }
