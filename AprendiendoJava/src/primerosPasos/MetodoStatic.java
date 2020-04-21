@@ -1,10 +1,14 @@
 package primerosPasos;
 
-public class MetodoStaticYSobrecarga { // https://www.youtube.com/watch?v=V0wIZ-OglsY&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=38
+public class MetodoStatic { // https://www.youtube.com/watch?v=V0wIZ-OglsY&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=38
 
 	// Utilizo el coodigo sin comentarios de ConceptoFinalStatic
 
 	// El concepto del static para los meetodos es la misma que para las variables.
+	// los meetodos static no pueden acceder a las variables de clase a no ser que
+	// la variable tambieen sea static.
+	// no actuan sobre objetos
+	// hay que dar el NombreClase.meetodo para usarlos (clase Math es un buen ejemplo)
 
 	public static void main(String[] args) { // el meetodo main es STATIC porque ya que todo programa de java al empezar
 												// a ejecutarse empieza por eel. Como a la hora de empezar no existe
