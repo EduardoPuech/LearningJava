@@ -19,10 +19,10 @@ public class UsoCoche {
 		// lo mismo, me da una respuesta vaciia. Eso quiere decir que si yo comento esta
 		// linea obtengo null como color del coche.
 		Seat.setColor(JOptionPane.showInputDialog("De quee color es su coche"));
-		Seat.setAsientosCuero(JOptionPane.showInputDialog("¿Quiere usted asientos de cuero? y/n")); // si es el valor
+		Seat.setAsientosCuero(JOptionPane.showInputDialog("¿Quiere usted asientos de cuero? si/no")); // si es el valor
 		// que asignee en la clase Coche para comparar, tiene que coincidir con ese
 		// valor, si es distinto no entra en los if
-		Seat.setClimatizador(JOptionPane.showInputDialog("¿Quiere usted climatizador? y/n"));
+		Seat.setClimatizador(JOptionPane.showInputDialog("¿Quiere usted climatizador? si/no"));
 
 		System.out.println(Seat.getConstructor());
 		System.out.println(Seat.getColor());
@@ -30,6 +30,8 @@ public class UsoCoche {
 		System.out.println(Seat.getClimatizador());
 		System.out.println(Seat.setGetPesoCoche() + " kilos");
 		System.out.println("El precio total del coche es " + Seat.getPrecioCoche() + " euros");
+		
+		
 	}
 
 }

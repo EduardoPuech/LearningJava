@@ -14,6 +14,7 @@ public class InformacionJava {
 		// Rehacer = Ctrl + Y
 		// Cambio de nombre = F2
 		// Ejecutar = CTRL + F11
+		// Eliminar una linea de coodigo = Ctrl + D
 
 		/*
 		 * PACKAGE
@@ -131,14 +132,19 @@ public class InformacionJava {
 		 */
 
 		/*
-		 * HERENCIA
+		 * // * HERENCIA (extends, super();)
 		 * 
 		 * El concepto de la herencia en POO es muy parecido a la vida real: cuando hay
-		 * un clase dentro de otra la inferior (hija) puede usar todos los meetodosb y
-		 * caracteriisticas de la superior (padre). "Anidable" tantas veces como se haya
-		 * programado.
+		 * un clase dentro de otra la inferior (hija/subclase) puede usar todos los
+		 * meetodosb y caracteriisticas de la superior (padre/superclase). "Anidable"
+		 * tantas veces como se haya programado.
 		 * 
 		 * Es, ni maas ni menos, reutilizar el coodigo ya escrito.
+		 * 
+		 * NO SE PUEDE HEREDAR DE MAAS DE UNA CLASE.
+		 * 
+		 * La regla de utilizacioon de la herencia consiste en responder a la premisa
+		 * baasica: es un... a nuestro teermino de clases.
 		 */
 
 	}
