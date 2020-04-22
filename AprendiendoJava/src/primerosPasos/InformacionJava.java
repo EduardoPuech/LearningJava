@@ -150,14 +150,16 @@ public class InformacionJava {
 		/*
 		 * POLIMORFISMO Y PRINCIPIO DE SUSTITUCIOON
 		 * 
+		 * Las variables objeto en java son polimoorficas.
+		 * 
 		 * El principio de sustitucioon quiere decir que podemos utilizar un objeto de
 		 * una subclase siempre que el programa espere un objeto de la superclase
 		 * (herencia). || Un objeto se puede comportar de diferente forma dependiendo
 		 * del contexto.
 		 * 
-		 * Las variables objeto en java son polimoorficas.
-		 * 
-		 * 
+		 * El Enlazado Dinaamico es el proceso automaatico por el cual el interprete de
+		 * java/maaquina virtual/compilador sabe, en un caso de polimorfismo, a quee
+		 * clase estaa haciendo referencia en cada momento en el tiempo de ejecucioon.
 		 */
 
 	}
