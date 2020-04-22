@@ -30,6 +30,10 @@ public class EmpleadoHerencia { // https://www.youtube.com/watch?v=3g_3cbH97cs&l
 
 class Empleadoses {
 
+	private String nombre;
+	private double sueldo;
+	private Date altaContrato;
+
 	public Empleadoses(String nom, double sld, int anno, int mes, int dia) {
 		nombre = nom;
 		sueldo = sld;
@@ -58,17 +62,37 @@ class Empleadoses {
 		sueldo = sueldo + aumento;
 	}
 
-	private String nombre;
-	private double sueldo;
-	private Date altaContrato;
-
 }
 
 class Jefatura extends Empleadoses {
 
 	private double incentivo;
 
-	public Jefatura(String nom, double sld, int anno, int mes, int dia) { // el constructor de la clase Empleado recibe argumentos, por lo tanto si quiero utilizarlo en la subclase tambieen tengo que darle argumentos (el mismo nuumero que en Empleado).
-		super(String nom, double sld, int anno, int mes, int dia); // Como teniia dos constructores, en funcioon de cuaantos argumentos pase estoy llamando a un constructor o a otro.
+	public Jefatura(String nom, double sld, int anno, int mes, int dia) { // el constructor de la clase Empleado recibe
+																			// argumentos, por lo tanto si quiero
+																			// utilizarlo en la subclase tambieen tengo
+																			// que darle argumentos (el mismo nuumero
+																			// que en Empleado).
+		super(nom, sld, anno, mes, dia); // Como teniia dos constructores, en funcioon de cuaantos argumentos pase estoy
+											// llamando a un constructor o a otro.
+	}
+
+	// este meetodo annade el incentivo que diferencia los objetos de tipo empleado
+	// y los de tipo jefe, a su vez, el sueldo de la calse empleado no puede aceptar
+	// el annadido del incentivo, por lo tanto tengo que sobreescribir el metodo
+	// setSueldo para que acepte el modelo de la clase jefe.
+	public void setIncentivo(double incentivo) {
+		this.incentivo = incentivo;
+	}
+
+	// este meetodo es el que me va a permitir obtener el sueldo de un objeto de
+	// la clase jefe. Puedo utilizar "sobrecarga" (sobreescritura) de meetodos ya
+	// que estoy en dos clases distintas, pero este solo se puede utilizar en
+	// Jefatura.
+	public double getSueldo() { // el triaangulo verde avisa de la sobreescritura del meetodo
+		double sueldoJefe = getSueldo(); // creo una variable que almacene el sueldo del objeto, ESTE GETSUELDO ES DE LA CLASE PADRE.
+		sueldoJefe = sueldoJefe + incentivo; // actualizo el sueldo sumaandole el incentivo || puedo hacerlo
+												// directamente en el return.
+		return sueldoJefe; // imprimo el nuevo sueldo
 	}
 }
