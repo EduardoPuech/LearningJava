@@ -13,22 +13,32 @@ public class EmpleadoHerenciaPolimorfismo { // https://www.youtube.com/watch?v=3
 
 	public static void main(String[] args) {
 
-		Empleadoses[] misEmpleados = new Empleadoses[4];
+		Jefatura jefeRRHH = new Jefatura("Alfonso", 40000, 2005, 11, 27); // creo un objeto de tipo jefatura
+		jefeRRHH.setIncentivo(2570);
+
+		Empleadoses[] misEmpleados = new Empleadoses[6]; // annado dos espacios para este ejemplo
 		misEmpleados[0] = new Empleadoses("Cesar de Echagüe", 25000, 2010, 03, 16);
 		misEmpleados[1] = new Empleadoses("Leonor de Acevedo", 24000, 2008, 01, 16);
 		misEmpleados[2] = new Empleadoses("Lupe de Torres", 26000, 2012, 02, 17);
 		misEmpleados[3] = new Empleadoses("Paca");
+		misEmpleados[4] = jefeRRHH; // POLIMORFISMO: PUEDO METER UN OBJETO DE TIPO JEFE EN UN ARRAY DE TIPO EMPLEADO
+//-------------------------------------PORQUE JEFE ES SUBCLASE DE EMPLEADO-----principio de sustitucioon-------------
+		misEmpleados[5] = new Jefatura("Maria", 60000, 2000, 07, 15);
 
-		for (Empleadoses aumento : misEmpleados) {
-			aumento.subidaSueldo(15);
+		for (Empleadoses aumento : misEmpleados) { // otra aplicacioon del polimorfismo: el meetodo aumento de la clase
+													// empleado va a funcionar tambieen en los objetos de tipo jefe
+			aumento.subidaSueldo(10);
 		}
 
-		for (Empleadoses impresion : misEmpleados) {
+		for (Empleadoses impresion : misEmpleados) { // aquii se vuelve a ver el polimorfismo: cuando estaa leyendo los
+														// datos, la variable impresion cuando llega a un objeto de tipo
+														// Jefe la lee como tal y hace el getSueldo de Jefe.
 			System.out.println("Nombre: " + impresion.getNombre() + "\nSueldo actual: " + impresion.getSueldo()
-					+ "\nAnno de entrada en la empresa: " + impresion.getAltaContrato() + "\nId de empleado: " + impresion.getId());
+					+ "\nAnno de entrada en la empresa: " + impresion.getAltaContrato() + "\nId de empleado: "
+					+ impresion.getId());
 		}
-		
-		System.out.println("El siguiente id seriia: " + Empleadoses.getSiguienteId());
+
+//		System.out.println("El siguiente id seriia: " + Empleadoses.getSiguienteId());
 	}
 }
 
@@ -40,7 +50,7 @@ class Empleadoses {
 	private Date altaContrato;
 	private static int idSiguiente = 1;
 	private int id;
-	
+
 	public Empleadoses(String nom, double sld, int anno, int mes, int dia) {
 		nombre = nom;
 		sueldo = sld;
@@ -70,11 +80,11 @@ class Empleadoses {
 		double aumento = sueldo * porcentaje / 100;
 		sueldo = sueldo + aumento;
 	}
-	
+
 	public int getId() {
 		return id;
 	}
-	
+
 	public static String getSiguienteId() {
 		return "El id siguiente seriia: " + idSiguiente;
 	}
