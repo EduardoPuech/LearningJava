@@ -144,7 +144,7 @@ public class InformacionJava {
 		 * NO SE PUEDE HEREDAR DE MAAS DE UNA CLASE.
 		 * 
 		 * La regla de utilizacioon de la herencia consiste en responder a la premisa
-		 * baasica: es un... a nuestro teermino de clases.
+		 * baasica: ¿subclase ES SIEMPRE UN superclase?... a nuestro teermino de clases.
 		 * 
 		 * Una clase y un meetodo tambieen pueden ser final. Cuando una clase es final,
 		 * acaba con el concepto de la herencia: no se permite hacer subclases de esa
