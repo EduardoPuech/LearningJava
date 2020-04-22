@@ -132,7 +132,7 @@ public class InformacionJava {
 		 */
 
 		/*
-		 * // * HERENCIA (extends, super();)
+		 * HERENCIA (extends, super();)
 		 * 
 		 * El concepto de la herencia en POO es muy parecido a la vida real: cuando hay
 		 * un clase dentro de otra la inferior (hija/subclase) puede usar todos los
@@ -145,6 +145,19 @@ public class InformacionJava {
 		 * 
 		 * La regla de utilizacioon de la herencia consiste en responder a la premisa
 		 * baasica: es un... a nuestro teermino de clases.
+		 */
+
+		/*
+		 * POLIMORFISMO Y PRINCIPIO DE SUSTITUCIOON
+		 * 
+		 * El principio de sustitucioon quiere decir que podemos utilizar un objeto de
+		 * una subclase siempre que el programa espere un objeto de la superclase
+		 * (herencia). || Un objeto se puede comportar de diferente forma dependiendo
+		 * del contexto.
+		 * 
+		 * Las variables objeto en java son polimoorficas.
+		 * 
+		 * 
 		 */
 
 	}

@@ -3,10 +3,12 @@ package empezamosPOO;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class EmpleadoHerencia { // https://www.youtube.com/watch?v=3g_3cbH97cs&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=42
+public class EmpleadoHerenciaPolimorfismo { // https://www.youtube.com/watch?v=3g_3cbH97cs&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=42
+											// https://www.youtube.com/watch?v=sdJgcMaazmI&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=43
 
 	/*
-	 * Utilizo el coodigo de EmpleadoSobrecargaConstrucotores
+	 * Utilizo el coodigo de EmpleadoSobrecargaConstrucotores con los annadidos del
+	 * static
 	 */
 
 	public static void main(String[] args) {
@@ -23,22 +25,29 @@ public class EmpleadoHerencia { // https://www.youtube.com/watch?v=3g_3cbH97cs&l
 
 		for (Empleadoses impresion : misEmpleados) {
 			System.out.println("Nombre: " + impresion.getNombre() + "\nSueldo actual: " + impresion.getSueldo()
-					+ "\nAnno de entrada en la empresa: " + impresion.getAltaContrato());
+					+ "\nAnno de entrada en la empresa: " + impresion.getAltaContrato() + "\nId de empleado: " + impresion.getId());
 		}
+		
+		System.out.println("El siguiente id seriia: " + Empleadoses.getSiguienteId());
 	}
 }
 
+// tengo que cambiarle el nombre para que no coincida con el de las otras dos clases (EmpleadoUnaFuente y EmpleadoSobrecarga)
 class Empleadoses {
 
 	private String nombre;
 	private double sueldo;
 	private Date altaContrato;
-
+	private static int idSiguiente = 1;
+	private int id;
+	
 	public Empleadoses(String nom, double sld, int anno, int mes, int dia) {
 		nombre = nom;
 		sueldo = sld;
 		GregorianCalendar fecha = new GregorianCalendar(anno, mes - 1, dia);
 		altaContrato = fecha.getTime();
+		id = idSiguiente;
+		idSiguiente++;
 	}
 
 	public Empleadoses(String nom) {
@@ -61,7 +70,14 @@ class Empleadoses {
 		double aumento = sueldo * porcentaje / 100;
 		sueldo = sueldo + aumento;
 	}
-
+	
+	public int getId() {
+		return id;
+	}
+	
+	public static String getSiguienteId() {
+		return "El id siguiente seriia: " + idSiguiente;
+	}
 }
 
 class Jefatura extends Empleadoses {
@@ -90,7 +106,8 @@ class Jefatura extends Empleadoses {
 	// que estoy en dos clases distintas, pero este solo se puede utilizar en
 	// Jefatura.
 	public double getSueldo() { // el triaangulo verde avisa de la sobreescritura del meetodo
-		double sueldoJefe = getSueldo(); // creo una variable que almacene el sueldo del objeto, ESTE GETSUELDO ES DE LA CLASE PADRE.
+		double sueldoJefe = super.getSueldo(); // creo una variable que almacene el sueldo del objeto, ESTE GETSUELDO ES
+												// DE LA CLASE PADRE.
 		sueldoJefe = sueldoJefe + incentivo; // actualizo el sueldo sumaandole el incentivo || puedo hacerlo
 												// directamente en el return.
 		return sueldoJefe; // imprimo el nuevo sueldo
