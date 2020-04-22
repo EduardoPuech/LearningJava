@@ -25,6 +25,10 @@ public class EmpleadoHerenciaPolimorfismo { // https://www.youtube.com/watch?v=3
 //-------------------------------------PORQUE JEFE ES SUBCLASE DE EMPLEADO-----principio de sustitucioon-------------
 		misEmpleados[5] = new Jefatura("Maria", 60000, 2000, 07, 15);
 
+//----------------------CCAASSTTIINNGG OO RREEFFUUNNDDIICCIIOOOONN DDEE OOBBJJEETTOOSS------------------------------
+		Jefatura jefaFinanzas = (Jefatura) misEmpleados[5];
+		jefaFinanzas.setIncentivo(1500);
+
 		for (Empleadoses aumento : misEmpleados) { // otra aplicacioon del polimorfismo: el meetodo aumento de la clase
 													// empleado va a funcionar tambieen en los objetos de tipo jefe
 			aumento.subidaSueldo(10);

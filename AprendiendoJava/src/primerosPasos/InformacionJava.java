@@ -81,7 +81,7 @@ public class InformacionJava {
 		System.out.println(entero);
 
 		/*
-		 * Errores
+		 * ERRORES
 		 * 
 		 * Tiempo de compilacioon: la sintaaxis estaa mal
 		 * 
@@ -109,7 +109,7 @@ public class InformacionJava {
 		 */
 
 		/*
-		 * Refundicioon
+		 * CASTING O REFUNDICIOON
 		 * 
 		 * convertir un tipo de dato en otro int a = (int)Math.round(b); el (int) es la
 		 * conversioon se suele utilizar para optimizar uso de memoria
@@ -145,6 +145,10 @@ public class InformacionJava {
 		 * 
 		 * La regla de utilizacioon de la herencia consiste en responder a la premisa
 		 * baasica: es un... a nuestro teermino de clases.
+		 * 
+		 * Una clase y un meetodo tambieen pueden ser final. Cuando una clase es final,
+		 * acaba con el concepto de la herencia: no se permite hacer subclases de esa
+		 * clase. Puede ser subclase de alguien pero no superclase de nadie.
 		 */
 
 		/*
