@@ -5,7 +5,7 @@ public class TipoDatos { // https://www.youtube.com/watch?v=OS1F6VNA6hs&list=PLU
 	public static void main(String[] args) {
 
 		// DATOS PRIMITIVOS (int, byte...)
-		// VARIABLES (un espacio de memoria RAM donde se almacena un valor que puede
+		// VARIABLES (un espacio de memoria RAM donde se almacena un valor que puede o CAMPOS DE CLASE
 		// cambiar (duh). (entero, bit, corto...)
 
 		// NUUMEROS ENTEROS
