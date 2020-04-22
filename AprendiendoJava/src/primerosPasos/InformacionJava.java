@@ -149,6 +149,9 @@ public class InformacionJava {
 		 * Una clase y un meetodo tambieen pueden ser final. Cuando una clase es final,
 		 * acaba con el concepto de la herencia: no se permite hacer subclases de esa
 		 * clase. Puede ser subclase de alguien pero no superclase de nadie.
+		 * 
+		 * Voy a llamar herencia indirecta a herencia de segunda, tercera o mayor
+		 * generacioon.
 		 */
 
 		/*
@@ -164,6 +167,27 @@ public class InformacionJava {
 		 * El Enlazado Dinaamico es el proceso automaatico por el cual el interprete de
 		 * java/maaquina virtual/compilador sabe, en un caso de polimorfismo, a quee
 		 * clase estaa haciendo referencia en cada momento en el tiempo de ejecucioon.
+		 */
+
+		/*
+		 * ABSTRACTO
+		 * 
+		 * Su funcioon es crear un patroon de disenno. Cuando necesito un meetodo que
+		 * exista en todas las subclases pero que dependiendo de cada una de ellas tenga
+		 * que ser de una manera u otra lo declaro abstracto y fuerzo lo que explico
+		 * despuees.
+		 * 
+		 * Meetodos, clases... cuando una clase tiene un (o maas de uno) meetodo
+		 * abstracto pasa a ser automaaticamente una clase abstracta.
+		 * 
+		 * abstract class nombreClase{...}
+		 * 
+		 * Un meetodo abstracto (public abstract tipoDato nombreMeetodo ()); No tiene
+		 * llaves. Es una especie de meetodo geneerico, esto es, en caso de herencia,
+		 * todas las clases que hereden (directa o indirectamente) de ella ESTAAN
+		 * OBLIGADAS a sobreescribir ese meetodo (public tipoDato nombreMeetod(){...}
+		 * Loogicamente seraan distintos en cada caso porque para eso estaa la
+		 * abstraccioon.
 		 */
 
 	}
