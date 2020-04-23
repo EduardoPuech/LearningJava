@@ -152,6 +152,10 @@ public class InformacionJava {
 		 * 
 		 * Voy a llamar herencia indirecta a herencia de segunda, tercera o mayor
 		 * generacioon.
+		 * 
+		 * TODAS LAS CLASES, DE MANERA PREDETERMINADA POR JAVA HEREDAN DE LA CLASE
+		 * OBJECT Y ES POR ESTO QUE SIEMPRE PUEDEN UTILIZAR TODO SU ARSENAL.
+		 * https://docs.oracle.com/javase/8/docs/api/
 		 */
 
 		/*
