@@ -5,7 +5,8 @@ public class TipoDatos { // https://www.youtube.com/watch?v=OS1F6VNA6hs&list=PLU
 	public static void main(String[] args) {
 
 		// DATOS PRIMITIVOS (int, byte...)
-		// VARIABLES (un espacio de memoria RAM donde se almacena un valor que puede o CAMPOS DE CLASE
+		// VARIABLES (un espacio de memoria RAM donde se almacena un valor que puede o
+		// CAMPOS DE CLASE
 		// cambiar (duh). (entero, bit, corto...)
 
 		// NUUMEROS ENTEROS
@@ -70,10 +71,22 @@ public class TipoDatos { // https://www.youtube.com/watch?v=OS1F6VNA6hs&list=PLU
 		 */
 
 		/*
-		 * MODIFICADORES:
+		 * MODIFICADORES: https://www.youtube.com/watch?v=eQWnegzD6ug&list=
+		 * PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=47
 		 * 
 		 * 
-		 * acceso: public/private (se puede, o no, usar desde otra clase)
+		 * De acceso: PUBLIC (se puede usar desde la propia clase, el mismo paquete,
+		 * subclases tanto dentro como fuera del propio paquete y clases tanto dentro
+		 * como fuera del propio paquete). PRIVATE (se puede usar desde la propia clase,
+		 * no se puede usar en el mismo paquete, ni subclases tanto dentro como fuera
+		 * del propio paquete, ni otras clases tanto dentro como fuera del propio
+		 * paquete). PROTECTED (se puede usar desde la propia clase, el mismo paquete,
+		 * subclases tanto dentro como fuera del propio paquete pero no se puede usar
+		 * desde otra clase que no sea subclase y estee en otro paquete) y el
+		 * MODIFICADOR POR DEFECTO: no poner nada (se puede usar desde la propia clase,
+		 * el mismo paquete, subclases dentro del propio paquete y no se puede usar en
+		 * subclases fuera del paquete, ni clases tanto dentro como fuera del propio
+		 * paquete).
 		 * 
 		 * aambito: static. Tanto para variables como para meetodos (hace que se pueda,
 		 * o no, utilizar en toda la clase). No se pueden crear meetodos que llamen a la
