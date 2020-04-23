@@ -194,5 +194,24 @@ public class InformacionJava {
 		 * abstraccioon.
 		 */
 
+		/*
+		 * INTERFACES
+		 * 
+		 * Una interfaz es un conjunto de directrices (directriz +=- meetodo) que tiene
+		 * que cumplir una clase (se parecen, aunque no lo son, a lo que es una clase
+		 * abstracta). Establecen un comportamiento.
+		 * 
+		 * Una clase ClaseEjemplo implementa (parecido a la herencia) una Interfaz.
+		 * 
+		 * Hay interfaces predefinidas (en la API) y propias (propias de cada
+		 * programador).
+		 * 
+		 * Una interfaz SOLO contiene meetodos abstractos y constantes. NO se puede
+		 * instanciar nada (no se puede usar new NombreInstancia). Todos los meetodos
+		 * son public abstract (de hecho son por defecto, si no lo pones se asume) y
+		 * solo se difinen, que es lo mismo que: no se implementan. Sii pueden tener
+		 * constantes pero no pueden tener variables.
+		 */
+
 	}
 }
