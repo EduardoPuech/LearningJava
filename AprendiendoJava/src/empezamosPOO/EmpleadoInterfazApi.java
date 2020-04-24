@@ -6,7 +6,7 @@ import java.util.Arrays;// Con esto fuerzo la necesidad de interfaz. De esta cla
 						// sort(Object[]a) que me obliga a que los elementos del array (clase Empleadosis)
 						// utilicen la interfaz "Comparable".
 
-public class EmpleadoInterfaz {
+public class EmpleadoInterfazApi {
 	public static void main(String[] args) {
 
 		Jefaturas jefeRRHH = new Jefaturas("Alfonso", 40000, 2005, 11, 27);
@@ -86,11 +86,14 @@ class Empleadosis implements Comparable {
 	}
 
 	// aquii sobreescribo el meetodo compareTo de la interfaz por exigencias de la
-	// sintaxis de java. Por la definicioon de este meetodo el argumento es de tipo
-	// object, aunque esto deriva en la necesidad de hacer un casting.
-	public int compareTo(Object miObjeto) {
-		Empleadosis comparador = (Empleadosis) miObjeto;
-		if (this.sueldo < comparador.sueldo) {
+	// sintaxis de java.
+	public int compareTo(Object miObjeto) { // Por la definicioon de este meetodo el argumento es de tipo object, aunque
+											// esto deriva en la necesidad de hacer un casting.
+		Empleadosis comparador = (Empleadosis) miObjeto; // casting del argumento al tipo de objeto que yo he creado
+															// para poder extraer la caracteriistica que quiero.
+		if (this.sueldo < comparador.sueldo) { // una vez que he sacado esa caracteriistica (sueldo en este caso pero
+												// puedo poner cualquier cosa) comparo el que estoy comparando con el
+												// del siguiente.
 			return -1;
 		} else if (this.sueldo > comparador.sueldo) {
 			return 1;
