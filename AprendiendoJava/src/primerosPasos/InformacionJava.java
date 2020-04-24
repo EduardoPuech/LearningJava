@@ -217,6 +217,13 @@ public class InformacionJava {
 		 * no hay liimite de interfaces.
 		 * 
 		 * Class nombreClase (extends Superclase) implements Interfaz
+		 * 
+		 * Si bien es cierto que las interfaces no se pueden instanciar, SII ACEPTAN EL
+		 * PRINCIPIO DE SUSTITUCIOON. Luego Coche c = new Coche(); (clase coche) bien;
+		 * Comparable ejemplo = new Comparable(); (instancia comparable) no se puede.
+		 * Comparable ejemplo = new Empleado (...); PRINCIPIO DE SUSTITUCIOON: sii
+		 * puedo. La interfaz actuua como una superclase en este caso.
+		 * 
 		 */
 
 	}

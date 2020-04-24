@@ -6,7 +6,7 @@ import java.util.Arrays;// Con esto fuerzo la necesidad de interfaz. De esta cla
 						// sort(Object[]a) que me obliga a que los elementos del array (clase Empleadosis)
 						// utilicen la interfaz "Comparable".
 
-public class EmpleadoInterfazApi {
+public class EmpleadoInterfazPredefinida {
 	public static void main(String[] args) {
 
 		Jefaturas jefeRRHH = new Jefaturas("Alfonso", 40000, 2005, 11, 27);
