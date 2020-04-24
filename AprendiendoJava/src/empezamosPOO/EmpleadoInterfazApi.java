@@ -94,9 +94,9 @@ class Empleadosis implements Comparable {
 		if (this.sueldo < comparador.sueldo) { // una vez que he sacado esa caracteriistica (sueldo en este caso pero
 												// puedo poner cualquier cosa) comparo el que estoy comparando con el
 												// del siguiente.
-			return -1;
+			return -1; // requiere este valor por la documentacioon de la api en caso de ser menor
 		} else if (this.sueldo > comparador.sueldo) {
-			return 1;
+			return 1; // en caso de ser mayor requiere este
 		} else { // caso de que sean iguales.
 			return 0;
 		}
