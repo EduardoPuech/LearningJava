@@ -240,6 +240,19 @@ public class InformacionJava {
 		 * 
 		 * Para crear una interfaz hago click en nuevo y en vez de pinchar en class
 		 * pincho en Interface: public interface nombreInterfaz{...}
+		 * 
+		 * Las interfaces pueden heredar, con la condicioon de que la clase que las
+		 * implemente cumpla con que todos los meetodos acumulados sean definidos. Esto
+		 * sirve para ahorrar implementar 8 en vez de 1 oo para que una caracteriistica
+		 * que queramos tener en varias y se puedan asociar sea maas eficiente.
+		 */
+
+		/*
+		 * TEMPORIZADOR
+		 * 
+		 * Programa que desencadena una accioon cada cierto tiempo.
+		 * 
+		 * Recurrimos a la clase Timer.
 		 */
 
 	}
