@@ -15,7 +15,7 @@ public class InterfazInstanceOf {
 		misEmpleados[2] = new Empleadosesa("Lupe de Torres", 26000, 2012, 02, 17);
 		misEmpleados[3] = new Empleadosesa("Paca");
 		misEmpleados[4] = jefeRRHH;
-		misEmpleados[5] = new Jefaturases("Maria", 60000, 2000, 07, 15);
+		misEmpleados[5] = new Jefaturases("Ana", 60000, 2000, 07, 15);
 		Jefaturases jefaFinanzas = (Jefaturases) misEmpleados[5];
 		jefaFinanzas.setIncentivo(1500);
 
