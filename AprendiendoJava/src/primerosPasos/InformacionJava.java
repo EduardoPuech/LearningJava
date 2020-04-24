@@ -239,7 +239,7 @@ public class InformacionJava {
 		 * que el propio compilardor me daraa un error.
 		 * 
 		 * Para crear una interfaz hago click en nuevo y en vez de pinchar en class
-		 * pincho en Interface.
+		 * pincho en Interface: public interface nombreInterfaz{...}
 		 */
 
 	}
