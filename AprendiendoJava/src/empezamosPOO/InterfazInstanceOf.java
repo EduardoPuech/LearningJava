@@ -19,6 +19,23 @@ public class InterfazInstanceOf {
 		Jefaturases jefaFinanzas = (Jefaturases) misEmpleados[5];
 		jefaFinanzas.setIncentivo(1500);
 
+		Empleadosesa directorComercial = new Jefaturases("Pedro", 60000, 2020, 12, 02); // principio de sustitucioon en
+																						// clases
+		Comparable ejemplo = new Empleadosesa("Eduardo", 50000, 1993, 02, 16); // principio de sustitucioon en interfaz.
+
+		if (directorComercial instanceof Empleadosesa) { // si pertenece a la subclase se hace eso.
+			System.out.println("Es de tipo Jefaturases"); // ya que jefatura hereda de empleado
+		} else {
+			System.out.println("No es instancia de Empleadoses"); // no hace falta pero lo pongo igual.
+		}
+
+		if (ejemplo instanceof Comparable) { // aquii compruebo lo mismo para ejemplo: Empleado tiene la interfaz
+												// Comparable.
+			System.out.println("Es una instancia de Comparable, estaa implementando la interfaz.");
+		} // antes he puesto el else porque sii, realmente solo me interesa saber si lo es
+			// o no, luego puedo escribirlo de manera que en caso de no serlo directamente
+			// ni lo diga, como he hecho en este caso.
+
 		for (Empleadosesa aumento : misEmpleados) {
 			aumento.subidaSueldo(10);
 		}
@@ -30,8 +47,6 @@ public class InterfazInstanceOf {
 					+ " -Anno de entrada en la empresa: " + impresion.getAltaContrato() + " -Id de empleado: "
 					+ impresion.getId());
 		}
-
-//		System.out.println("El siguiente id seriia: " + Empleadoses.getSiguienteId());
 	}
 }
 
@@ -83,6 +98,7 @@ class Empleadosesa implements Comparable {
 
 	public int compareTo(Object miObjeto) {
 		Empleadosesa comparador = (Empleadosesa) miObjeto;
+		if (this.sueldo < comparador.sueldo) {
 			return -1;
 		} else if (this.sueldo > comparador.sueldo) {
 			return 1;

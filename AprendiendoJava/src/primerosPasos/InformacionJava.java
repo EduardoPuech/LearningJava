@@ -224,6 +224,22 @@ public class InformacionJava {
 		 * Comparable ejemplo = new Empleado (...); PRINCIPIO DE SUSTITUCIOON: sii
 		 * puedo. La interfaz actuua como una superclase en este caso.
 		 * 
+		 * A la hora de programar una interfaz, lo importante es pensar quee es aquello
+		 * que hace especial a una clase que la diferencia de las otras y que SIEMPRE
+		 * (yo decido) va a tener que hacer. De esta manera lo que consigo es una guiia
+		 * a la hora de programar que hace que si se me olvida programar alguna funcioon
+		 * en la clase en la que estoy trabajando Java me lo recuerde dando un error ya
+		 * que no estoy cumpliendo el: todos los meetodos de la interfaz se tienen que
+		 * sobreescribir en la clase.
+		 * 
+		 * E.g.: todos los jefes tienen que tomar decisiones y tengo 3 tipos de jefes
+		 * (por lo tanto tres clases distintas de jefes). Si hago una interfaz que
+		 * fuerce la creacioon de un meetodo tomarDecisiones y todas las clases de tipo
+		 * jefe implementan esa interfaz no se me va a olvidar programar ese meetodo ya
+		 * que el propio compilardor me daraa un error.
+		 * 
+		 * Para crear una interfaz hago click en nuevo y en vez de pinchar en class
+		 * pincho en Interface.
 		 */
 
 	}
