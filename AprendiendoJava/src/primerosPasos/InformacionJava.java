@@ -211,6 +211,12 @@ public class InformacionJava {
 		 * son public abstract (de hecho son por defecto, si no lo pones se asume) y
 		 * solo se difinen, que es lo mismo que: no se implementan. Sii pueden tener
 		 * constantes pero no pueden tener variables.
+		 * 
+		 * Intenta de alguna manera ser una herramienta para subsanar las limitaciones
+		 * que se derivan de la herencia simple. Un ejemplo de esto es el hecho de que
+		 * no hay liimite de interfaces.
+		 * 
+		 * Class nombreClase (extends Superclase) implements Interfaz
 		 */
 
 	}
