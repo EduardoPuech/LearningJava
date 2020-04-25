@@ -43,7 +43,7 @@ class Reloj {
 
 		public void actionPerformed(ActionEvent evento) {
 			Date ahora = new Date();
-			System.out.println("Te pongo la hora cada 5 segundos: " + ahora);
+			System.out.println("Te pongo la hora cada 3 segundos: " + ahora);
 			// las variables booleanas son true por defecto.
 			if (sonido) { // la clase estaa accediendo a un campo de ejemplar PRIVADO (variable) que no es
 							// suyo, esta es una de las principales ventajas de las clases internas,
