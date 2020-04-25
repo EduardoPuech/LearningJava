@@ -246,5 +246,29 @@ public class InformacionJava {
 		 * sirve para ahorrar implementar 8 en vez de 1 oo para que una caracteriistica
 		 * que queramos tener en varias y se puedan asociar sea maas eficiente.
 		 */
+
+		/*
+		 * CLASES INTERNAS O INNER CLASS
+		 * 
+		 * Una clase interna es (sorpresa) una clase dentro de otra. Algo como los
+		 * bucles o ifs anidados.
+		 * 
+		 * Sintaxis: public class Clase 1{class Clase2{coodigo Clase2}coodigo Clase1}
+		 * 
+		 * Esto sirve para: - Acceder a campos privados de una clase desde otra. -
+		 * -Ocultar una clase a otras del mismo paquete. - Crear clases anoonimas (muy
+		 * uutiles en eventos y retrollamadas). - Cuando solo una clase debe poder
+		 * acceder a los campos de clase (variables) de otra.
+		 * 
+		 * CLASES INTERNAS LOCALES: una clase dentro de un meetodo. Esto puede resultar
+		 * uutil cuando solo se va a utilizar o INSTANCIAR UNA UUNICA VEZ y sirve para
+		 * simplificar maas el coodigo: no hay que crear una clase entera con getter y
+		 * setter para un uunico uso. El aambito queda restringido a ese meetodo: estaan
+		 * maas encapsuladas (siempre es buena la encapsulacioon) y asii nadie que no
+		 * deba tocarlas puede hacerlo, o lo que es lo mismo, maas seguridad/estabilidad
+		 * y simplificacioon en el coodigo.
+		 * 
+		 * Cuando una clase interna es local no lleva ninguun modificador de acceso.
+		 */
 	}
 }
