@@ -246,14 +246,5 @@ public class InformacionJava {
 		 * sirve para ahorrar implementar 8 en vez de 1 oo para que una caracteriistica
 		 * que queramos tener en varias y se puedan asociar sea maas eficiente.
 		 */
-
-		/*
-		 * TEMPORIZADOR
-		 * 
-		 * Programa que desencadena una accioon cada cierto tiempo.
-		 * 
-		 * Recurrimos a la clase Timer.
-		 */
-
 	}
 }

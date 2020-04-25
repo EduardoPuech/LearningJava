@@ -3,32 +3,32 @@ package empezamosPOO;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Arrays;// Con esto fuerzo la necesidad de interfaz. De esta clase voy a usar el meetodo
-						// sort(Object[]a) que me obliga a que los elementos del array (clase Empleadosis)
+						// sort(Object[]a) que me obliga a que los elementos del array (clase EmpleadoInterfazPre)
 						// utilicen la interfaz "Comparable".
 
 public class EmpleadoInterfazPredefinida {
 	public static void main(String[] args) {
 
-		Jefaturas jefeRRHH = new Jefaturas("Alfonso", 40000, 2005, 11, 27);
+		JefaturaInterfazPre jefeRRHH = new JefaturaInterfazPre("Alfonso", 40000, 2005, 11, 27);
 		jefeRRHH.setIncentivo(2570);
-		Empleadosis[] misEmpleados = new Empleadosis[6];
-		misEmpleados[0] = new Empleadosis("Cesar de Echagüe", 25000, 2010, 03, 16);
-		misEmpleados[1] = new Empleadosis("Leonor de Acevedo", 25000, 2008, 01, 16);
-		misEmpleados[2] = new Empleadosis("Lupe de Torres", 26000, 2012, 02, 17);
-		misEmpleados[3] = new Empleadosis("Paca");
+		EmpleadoInterfazPre[] misEmpleados = new EmpleadoInterfazPre[6];
+		misEmpleados[0] = new EmpleadoInterfazPre("Cesar de Echagüe", 25000, 2010, 03, 16);
+		misEmpleados[1] = new EmpleadoInterfazPre("Leonor de Acevedo", 25000, 2008, 01, 16);
+		misEmpleados[2] = new EmpleadoInterfazPre("Lupe de Torres", 26000, 2012, 02, 17);
+		misEmpleados[3] = new EmpleadoInterfazPre("Paca");
 		misEmpleados[4] = jefeRRHH;
-		misEmpleados[5] = new Jefaturas("Maria", 60000, 2000, 07, 15);
-		Jefaturas jefaFinanzas = (Jefaturas) misEmpleados[5];
+		misEmpleados[5] = new JefaturaInterfazPre("Maria", 60000, 2000, 07, 15);
+		JefaturaInterfazPre jefaFinanzas = (JefaturaInterfazPre) misEmpleados[5];
 		jefaFinanzas.setIncentivo(1500);
 
-		for (Empleadosis aumento : misEmpleados) {
+		for (EmpleadoInterfazPre aumento : misEmpleados) {
 			aumento.subidaSueldo(10);
 		}
 
 		// uso el sort para ordenarlos de menor a mayor por sueldo
 		Arrays.sort(misEmpleados);
 
-		for (Empleadosis impresion : misEmpleados) {
+		for (EmpleadoInterfazPre impresion : misEmpleados) {
 			System.out.println("Nombre: " + impresion.getNombre() + " -Sueldo actual: " + impresion.getSueldo()
 					+ " -Anno de entrada en la empresa: " + impresion.getAltaContrato() + " -Id de empleado: "
 					+ impresion.getId());
@@ -39,7 +39,7 @@ public class EmpleadoInterfazPredefinida {
 }
 
 // tengo que cambiarle el nombre para que no coincida con el de las otras tre clases (EmpleadoUnaFuente y EmpleadoSobrecarga y EmpleadoHerenciaPolimorfismo)
-class Empleadosis implements Comparable {
+class EmpleadoInterfazPre implements Comparable {
 
 	private String nombre;
 	private double sueldo;
@@ -47,7 +47,7 @@ class Empleadosis implements Comparable {
 	private static int idSiguiente = 1;
 	private int id;
 
-	public Empleadosis(String nom, double sld, int anno, int mes, int dia) {
+	public EmpleadoInterfazPre(String nom, double sld, int anno, int mes, int dia) {
 		nombre = nom;
 		sueldo = sld;
 		GregorianCalendar fecha = new GregorianCalendar(anno, mes - 1, dia);
@@ -56,7 +56,7 @@ class Empleadosis implements Comparable {
 		idSiguiente++;
 	}
 
-	public Empleadosis(String nom) {
+	public EmpleadoInterfazPre(String nom) {
 		this(nom, 20000, 2000, 01, 01);
 	}
 
@@ -89,7 +89,7 @@ class Empleadosis implements Comparable {
 	// sintaxis de java.
 	public int compareTo(Object miObjeto) { // Por la definicioon de este meetodo el argumento es de tipo object, aunque
 											// esto deriva en la necesidad de hacer un casting.
-		Empleadosis comparador = (Empleadosis) miObjeto; // casting del argumento al tipo de objeto que yo he creado
+		EmpleadoInterfazPre comparador = (EmpleadoInterfazPre) miObjeto; // casting del argumento al tipo de objeto que yo he creado
 															// para poder extraer la caracteriistica que quiero.
 		if (this.sueldo < comparador.sueldo) { // una vez que he sacado esa caracteriistica (sueldo en este caso pero
 												// puedo poner cualquier cosa) comparo el que estoy comparando con el
@@ -103,11 +103,11 @@ class Empleadosis implements Comparable {
 	}
 }
 
-class Jefaturas extends Empleadosis {
+class JefaturaInterfazPre extends EmpleadoInterfazPre {
 
 	private double incentivo;
 
-	public Jefaturas(String nom, double sld, int anno, int mes, int dia) {
+	public JefaturaInterfazPre(String nom, double sld, int anno, int mes, int dia) {
 		super(nom, sld, anno, mes, dia);
 	}
 

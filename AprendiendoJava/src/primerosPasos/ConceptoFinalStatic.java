@@ -4,8 +4,8 @@ public class ConceptoFinalStatic {
 
 	/*
 	 * Aquii voy a demostrar y explicar la utilizacioon de FINAL y de STATIC, para
-	 * lo cual voy a empezar creando una clase Empleado parecida a la de
-	 * EmpleadoUnaFuente. De hecho tambieen voy a usar solo un fichero fuente.
+	 * lo cual voy a empezar creando una clase EmpleadoFinalStatic parecida a la de
+	 * EmpleadoFinalStaticUnaFuente. De hecho tambieen voy a usar solo un fichero fuente.
 	 * 
 	 * https://www.youtube.com/watch?v=tZekQAcSY8o&list=
 	 * PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=36
@@ -13,7 +13,7 @@ public class ConceptoFinalStatic {
 	 * FINAL lo utilizo para declarar constantes, cosas dentro de la clase que no
 	 * quiero que sean alteradas a lo largo de la ejecucioon del programa.
 	 * 
-	 * Para este voy a annadir el uso de un Id uunico para cada empleado
+	 * Para este voy a annadir el uso de un Id uunico para cada EmpleadoFinalStatic
 	 * 
 	 * https://www.youtube.com/watch?v=QIV7FfXa-zY&list=
 	 * PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=37
@@ -24,7 +24,7 @@ public class ConceptoFinalStatic {
 	 * 
 	 * 
 	 * STATIC (///) altera el aambito, tanto de una variable como de un meetodo:
-	 * hace que se pueda usar en toda la clase: en vez de que cada empleado tenga un
+	 * hace que se pueda usar en toda la clase: en vez de que cada EmpleadoFinalStatic tenga un
 	 * id, el propio programa tiene un id y por lo tanto cada vez que
 	 * 
 	 * 
@@ -32,29 +32,29 @@ public class ConceptoFinalStatic {
 
 	public static void main(String[] args) {
 
-		Empleado empleado1 = new Empleado("Carlos"); // creo el objeto empleado
-		Empleado empleado2 = new Empleado("Ana"); // creo el objeto empleado
-		Empleado empleado3 = new Empleado("Cristina");
-		Empleado empleado4 = new Empleado("Pedro");
-//		System.out.println(empleado1.getEmpleado()); // veo las caracteriisticas predeterminadas
-		empleado1.setSeccion("Informaatica"); // lo muevo a un nuevo departamento
-//	empleado2.setNombre("Fernanda"); // al dejar de funcionar el meetodo ya no puedo usarlo
-//	ahora bien, un empleado no se puede cambiar el nombre, aunque el coodigo lo
+		EmpleadoFinalStatic EmpleadoFinalStatic1 = new EmpleadoFinalStatic("Carlos"); // creo el objeto EmpleadoFinalStatic
+		EmpleadoFinalStatic EmpleadoFinalStatic2 = new EmpleadoFinalStatic("Ana"); // creo el objeto EmpleadoFinalStatic
+		EmpleadoFinalStatic EmpleadoFinalStatic3 = new EmpleadoFinalStatic("Cristina");
+		EmpleadoFinalStatic EmpleadoFinalStatic4 = new EmpleadoFinalStatic("Pedro");
+//		System.out.println(EmpleadoFinalStatic1.getEmpleadoFinalStatic()); // veo las caracteriisticas predeterminadas
+		EmpleadoFinalStatic1.setSeccion("Informaatica"); // lo muevo a un nuevo departamento
+//	EmpleadoFinalStatic2.setNombre("Fernanda"); // al dejar de funcionar el meetodo ya no puedo usarlo
+//	ahora bien, un EmpleadoFinalStatic no se puede cambiar el nombre, aunque el coodigo lo
 //	permita y exista un meetodo que lo haga no deberiia poder hacerse. Para esto
 //	es para lo que sirve el final:-------------------------------------------->
-		System.out.println(empleado1.getEmpleado()); // vuelvo a ver las caracteriisticas
-///		Empleado.id++; // tiene que estar despuees del primero para que haga la actualizacioon a partir
+		System.out.println(EmpleadoFinalStatic1.getEmpleadoFinalStatic()); // vuelvo a ver las caracteriisticas
+///		EmpleadoFinalStatic.id++; // tiene que estar despuees del primero para que haga la actualizacioon a partir
 ///						// de este, si hubiese un tercero lo pondriia tambieen entre el segundo y el
 ///						// tercero
-		System.out.println(empleado2.getEmpleado());
-		System.out.println(empleado3.getEmpleado());
-		System.out.println(empleado4.getEmpleado());
+		System.out.println(EmpleadoFinalStatic2.getEmpleadoFinalStatic());
+		System.out.println(EmpleadoFinalStatic3.getEmpleadoFinalStatic());
+		System.out.println(EmpleadoFinalStatic4.getEmpleadoFinalStatic());
 	}
 
 }
 
-// va a crear un empleado con un nombre y una seccioon a la que pertenece dentro de la empresa.
-class Empleado {
+// va a crear un EmpleadoFinalStatic con un nombre y una seccioon a la que pertenece dentro de la empresa.
+class EmpleadoFinalStatic {
 
 	// creo las variables (encapsuladas)
 //	---------------------------------> y por lo tanto tengo que declarar la
@@ -65,9 +65,9 @@ class Empleado {
 	private int id;
 	private static int idCreciente = 1;
 
-	// creo el constructor, tomando como presupuesto que todos los empleados entran
+	// creo el constructor, tomando como presupuesto que todos los EmpleadoFinalStatics entran
 	// al mismo departemento, con lo cual seccioon no es un paraametro.
-	public Empleado(String nom) {
+	public EmpleadoFinalStatic(String nom) {
 		nombre = nom;
 		seccion = "Administracioon";
 ///		id = 1; // inicio la variable static en el constructor
@@ -89,8 +89,8 @@ class Empleado {
 //	}
 
 	// getter del constructor
-	public String getEmpleado() {
-		return "El empleado se llama: " + nombre + ", pertenece a la seccioon: " + seccion + " y su Id es: " + id;
+	public String getEmpleadoFinalStatic() {
+		return "El EmpleadoFinalStatic se llama: " + nombre + ", pertenece a la seccioon: " + seccion + " y su Id es: " + id;
 	}
 
 }

@@ -25,7 +25,7 @@ public class Metodos {
 		System.out.printf("%1.2f", +x / 3); // el nuumero despues del . es el numero de decimales que le pido
 
 		/*
-		 * Constructor
+		 * CONSTRUCTOR
 		 * 
 		 * Un constructor es un meetodo especial. Tiene el mismo nombre de la clase a la
 		 * que pertenece. Puede haber maas de uno en la misma clase. Para utilizarlo hay
@@ -36,6 +36,14 @@ public class Metodos {
 
 		/*
 		 * parseInt(variable) (pertenece a la clase Integer)
+		 */
+		
+		/*
+		 * TEMPORIZADOR
+		 * 
+		 * Programa que desencadena una accioon cada cierto tiempo.
+		 * 
+		 * Recurrimos a la clase Timer.
 		 */
 
 	}

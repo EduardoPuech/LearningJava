@@ -31,26 +31,26 @@ public class EmpleadoSobrecargaConstructores { // https://www.youtube.com/watch?
 
 	public static void main(String[] args) {
 
-		Empleados[] misEmpleados = new Empleados[4];
-		misEmpleados[0] = new Empleados("Cesar de Echagüe", 25000, 2010, 03, 16);
-		misEmpleados[1] = new Empleados("Leonor de Acevedo", 24000, 2008, 01, 16);
-		misEmpleados[2] = new Empleados("Lupe de Torres", 26000, 2012, 02, 17);
-		misEmpleados[3] = new Empleados("Paca");
+		EmpleadoSobrecarga[] misEmpleadoSobrecarga = new EmpleadoSobrecarga[4];
+		misEmpleadoSobrecarga[0] = new EmpleadoSobrecarga("Cesar de Echagüe", 25000, 2010, 03, 16);
+		misEmpleadoSobrecarga[1] = new EmpleadoSobrecarga("Leonor de Acevedo", 24000, 2008, 01, 16);
+		misEmpleadoSobrecarga[2] = new EmpleadoSobrecarga("Lupe de Torres", 26000, 2012, 02, 17);
+		misEmpleadoSobrecarga[3] = new EmpleadoSobrecarga("Paca");
 
-		for (Empleados aumento : misEmpleados) {
+		for (EmpleadoSobrecarga aumento : misEmpleadoSobrecarga) {
 			aumento.subidaSueldo(15);
 		}
 
-		for (Empleados impresion : misEmpleados) {
+		for (EmpleadoSobrecarga impresion : misEmpleadoSobrecarga) {
 			System.out.println("Nombre: " + impresion.getNombre() + "\nSueldo actual: " + impresion.getSueldo()
 					+ "\nAnno de entrada en la empresa: " + impresion.getAltaContrato());
 		}
 	}
 }
 
-class Empleados {
+class EmpleadoSobrecarga {
 	// este seriia el primer constructor para el primer tipo de estado inicial
-	public Empleados(String nom, double sld, int anno, int mes, int dia) {
+	public EmpleadoSobrecarga(String nom, double sld, int anno, int mes, int dia) {
 		nombre = nom;
 		sueldo = sld;
 		GregorianCalendar fecha = new GregorianCalendar(anno, mes - 1, dia);
@@ -58,14 +58,14 @@ class Empleados {
 	}
 
 	// este seriia el segundo (por ejemplo si desconozco el sueldo de alguno de los
-	// empleados o la fecha de alta, solo conozco el nombre
+	// EmpleadoSobrecarga o la fecha de alta, solo conozco el nombre
 
-//	public Empleados (String nom) { // este devolveriia el nombre, en la seccioon sueldo un 0 (valor prederminado de int)
+//	public EmpleadoSobrecarga (String nom) { // este devolveriia el nombre, en la seccioon sueldo un 0 (valor prederminado de int)
 //									// y en la seccioon altaContrato devolveriia null (valor predeterminado de la clase Date.
 //		nombre = nom;
 //	}
 
-	public Empleados(String nom) {
+	public EmpleadoSobrecarga(String nom) {
 		this(nom, 20000, 2000, 01, 01); // ademaas voy a dar unos valores predeterminados para todo empleado: el THIS
 										// llama al otro constructor para la "tipificacioon" de coomo rellenar esos
 										// valores predeterminados.

@@ -13,7 +13,7 @@ public class PersonaAbstraction { // https://www.youtube.com/watch?v=LDZUBY0mxv8
 		Persona[] todos = new Persona[2];
 
 		todos[0] = new EmpleadosAbs("Eduardo", 15000, 2020, 02, 02);
-		todos[1] = new Estudiante("Marina", "Derecho");
+		todos[1] = new EstudianteAbs("Marina", "Derecho");
 
 		for (Persona impresion : todos) {
 			System.out.println(
@@ -69,10 +69,10 @@ class EmpleadosAbs extends Persona {
 	}
 }
 
-class Estudiante extends Persona {
+class EstudianteAbs extends Persona {
 	private String carrera;
 
-	public Estudiante(String nombre, String carrera) {
+	public EstudianteAbs(String nombre, String carrera) {
 		super(nombre);
 		this.carrera = carrera;
 	}

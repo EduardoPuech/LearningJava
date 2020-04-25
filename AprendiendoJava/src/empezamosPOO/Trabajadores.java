@@ -6,5 +6,5 @@ public interface Trabajadores {
 
 	// al igual que en el meetodo, public static final son predeterminados en las
 	// interfaces.
-	public static final double bonus_base = 1500; // creacion de una constante
+	public static final double bonusBase = 1500; // creacion de una constante
 }

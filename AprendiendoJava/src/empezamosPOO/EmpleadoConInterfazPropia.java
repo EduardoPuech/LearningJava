@@ -8,7 +8,7 @@ public class EmpleadoConInterfazPropia {
 	public static void main(String[] args) {
 
 		JefaturaInterfazPropia jefeRRHH = new JefaturaInterfazPropia("Alfonso", 40000, 2005, 11, 27);
-		jefeRRHH.setIncentivo(2570);
+		jefeRRHH.estableceIncentivo(2570);
 		EmpleadoInterfazPropia[] misEmpleados = new EmpleadoInterfazPropia[6];
 		misEmpleados[0] = new EmpleadoInterfazPropia("Cesar de Echagüe", 25000, 2010, 03, 16);
 		misEmpleados[1] = new EmpleadoInterfazPropia("Leonor de Acevedo", 25000, 2008, 01, 16);
@@ -17,7 +17,7 @@ public class EmpleadoConInterfazPropia {
 		misEmpleados[4] = jefeRRHH;
 		misEmpleados[5] = new JefaturaInterfazPropia("Maria", 60000, 2000, 07, 15);
 		JefaturaInterfazPropia jefaFinanzas = (JefaturaInterfazPropia) misEmpleados[5];
-		jefaFinanzas.setIncentivo(1500);
+		jefaFinanzas.estableceIncentivo(1500);
 
 		System.out.println(jefaFinanzas.tomarDecisiones("Hoy hay vacaciones"));
 //		misEmpleados.tomarDecisiones("No hay vacaciones"); // da error porque la clase Empleado no implementa Jefe luego no le hemos creado el meetodo tomarDecisiones.
@@ -41,6 +41,7 @@ public class EmpleadoConInterfazPropia {
 		}
 	}
 }
+
 
 class EmpleadoInterfazPropia implements Comparable, Trabajadores {
 
@@ -100,9 +101,10 @@ class EmpleadoInterfazPropia implements Comparable, Trabajadores {
 	}
 
 	public double set_bonus(double bonus) {
-		return Trabajadores.bonus_base + bonus;
+		return Trabajadores.bonusBase + bonus;
 	}
 }
+
 
 class JefaturaInterfazPropia extends EmpleadoInterfazPropia implements Jefes { // implemento la interfaz y
 																				// automaaticamente me pide que
@@ -115,7 +117,7 @@ class JefaturaInterfazPropia extends EmpleadoInterfazPropia implements Jefes { /
 		super(nom, sld, anno, mes, dia);
 	}
 
-	public void setIncentivo(double incentivo) {
+	public void estableceIncentivo(double incentivo) {
 		this.incentivo = incentivo;
 	}
 
@@ -133,7 +135,7 @@ class JefaturaInterfazPropia extends EmpleadoInterfazPropia implements Jefes { /
 	// interfaz Jefes.
 	public double set_bonus(double bonus) {
 		double prima = 2000;
-		return Trabajadores.bonus_base + bonus + prima;
+		return Trabajadores.bonusBase + bonus + prima;
 //				los 1500 de la interfaz + el argumento pasado por paraametro + la prima-> una prima extra para los jefes.
 	}
 }
