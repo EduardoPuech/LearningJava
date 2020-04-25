@@ -3,7 +3,10 @@ package empezamosPOO;
 import javax.swing.*; // import para timer. En caso de que no hiciese falta todo el paquete swing podriia ahorrarme esta linea e importar solo el Timer
 						// pero en este caso voy a usar JOoptionPane asii que necesito ambos (a no ser que importase cosa a cosa).
 import javax.swing.Timer; // especifico esto porque el objeto de tipo timer me interesa que sea de swing y no de util.
+
+import java.awt.Toolkit;
 import java.awt.event.*; // import requerido por la interfaz
+
 import java.util.*;
 
 public class MiTemporizador {
@@ -34,7 +37,8 @@ public class MiTemporizador {
 								// extender el tiempo de ejecucioon del programa: uso una ventanita de
 								// JOptionPane.
 		JOptionPane.showMessageDialog(null, "Pulsa Ok para detener"); // showMessageDialog me saca una ventana que
-																			// no necesita input.
+																		// no necesita input.
+		System.exit(0); // cuando llega aquii sale para que al pulsar el botoon pare.
 	}
 }
 
@@ -45,5 +49,8 @@ class DameHora implements ActionListener { // no pongo get porque no es un gette
 								// actualizacioon de la variable que se guarda en el meetodo al que luego llama
 								// el Timer: actualizar la hora cada 5 secundos, por eso utilizo la clase Date.
 		System.out.println("Te pongo la hora cada 5 segundos: " + ahora); // instruccion de comportamiento.
+		// usamos Toolkit para que haga ruidito windows cada vez que imprima
+		// (informacioon en API)
+		Toolkit.getDefaultToolkit().beep();
 	}
 }
