@@ -4,6 +4,8 @@ public class InformacionJava {
 
 	public static void main(String[] args) {
 
+		// Java: write once, run anywhere... or everywhere :)
+
 		// ACCESOS DIRECTOS
 
 		// Autotabulacioon = Ctrl + º; Lo cambie desde el original: Ctrl + Shift + F.
@@ -271,6 +273,19 @@ public class InformacionJava {
 		 * 
 		 * Cuando una clase interna es local no lleva ninguun modificador de acceso.
 		 * Puede acceder a los campos de la clase externa.
+		 */
+
+		/*
+		 * INTERFACES DE USUARIO: SWING
+		 * 
+		 * El paquete original de interfaces de Java AWT delegaba el comportamiento de
+		 * la interfaz al S.O. huésped. Dado que eso haciia que en cada S.O. se portase
+		 * de una manera y hubiese que comprobar el coodigo en cada uno se creoo el
+		 * paquete SWING que pinta los elementos de la interfaz sobre una ventana.
+		 * 
+		 * Es maas costoso ya que hay que "dibujar desde coodigo" por decirlo de alguna
+		 * manera los botones y los menuus, pero al hacerlos tuu y yo dejarle al SO que
+		 * haga lo que le de la gana te aseguras de que funciona en todos lados.
 		 */
 	}
 }
