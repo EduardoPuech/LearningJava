@@ -6,7 +6,7 @@ public class InformacionJava {
 
 		// ACCESOS DIRECTOS
 
-		// Autotabulacioon = Ctrl + Shift + F.
+		// Autotabulacioon = Ctrl + º; Lo cambie desde el original: Ctrl + Shift + F.
 		// Autocompletar = Ctrl + barra espaciadora,
 		// Autoimportar = Ctrl + Shift + O.
 		// Comentar una linea ya escrita = Ctrl + /
@@ -15,6 +15,7 @@ public class InformacionJava {
 		// Cambio de nombre = F2
 		// Ejecutar = CTRL + F11
 		// Eliminar una linea de coodigo = Ctrl + D
+		// Pasar de una clase abierta a otra = Ctrl + Page Up/Down
 
 		/*
 		 * PACKAGE
@@ -269,6 +270,7 @@ public class InformacionJava {
 		 * y simplificacioon en el coodigo.
 		 * 
 		 * Cuando una clase interna es local no lleva ninguun modificador de acceso.
+		 * Puede acceder a los campos de la clase externa.
 		 */
 	}
 }
