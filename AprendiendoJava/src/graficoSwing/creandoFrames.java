@@ -53,6 +53,7 @@ class MyFrame extends JFrame { // hereda de jframe para poder utilizar todos sus
 		// la clase MyFrame.
 
 //		Y de la misma manera puedo meter el CloseOperation.
+		setLocation(500,300); // con esto reubico el spawn del marco
 	}
 
 }
