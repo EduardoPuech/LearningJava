@@ -4,6 +4,7 @@ import javax.swing.*;
 
 import java.awt.Toolkit;
 import java.awt.Dimension;
+import java.awt.Image;
 
 public class CreandoFrameCentradoToolkit { // https://www.youtube.com/watch?v=zADgVrhtBDs&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=57
 
@@ -11,6 +12,7 @@ public class CreandoFrameCentradoToolkit { // https://www.youtube.com/watch?v=zA
 	 * Para no que no sea demasiado liio hemos creado una fuente nueva. En esta
 	 * vamos a centrar la ventana utilizando Toolkit para: saber la resolucioon de
 	 * la pantalla en la que estoy trabajando y a partir de ello centrar la ventana.
+	 * Tambieen voy a cambiar el icono de la ventana.
 	 */
 
 	public static void main(String[] args) {
@@ -55,5 +57,8 @@ class FrameCentrado extends JFrame {
 //		setLocation(anchoPantalla / 4, altoPantalla / 4);
 
 //		setBounds(anchoPantalla / 4, altoPantalla / 4, anchoPantalla / 2, altoPantalla / 2); // lo mismo pero con bounds en vez de location y size
+
+		Image myIcon = miPantalla.getImage("icono.gif");
+		setIconImage(myIcon);
 	}
 }
