@@ -18,7 +18,7 @@ public class CreandoFrameCentradoToolkit { // https://www.youtube.com/watch?v=zA
 		FrameCentrado frame2 = new FrameCentrado();
 		frame2.setVisible(true);
 		frame2.setLocation(frame2.anchoPantalla / 4, frame2.altoPantalla / 4);
-		frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // comportamiento del programa al cierre
 		frame2.setTitle("Ventana centrada");
 	}
 }
@@ -53,5 +53,7 @@ class FrameCentrado extends JFrame {
 														// la pantalla en la que abro el programa: si es en el pc seraa
 														// maas grande que en el portaatil.
 //		setLocation(anchoPantalla / 4, altoPantalla / 4);
+
+//		setBounds(anchoPantalla / 4, altoPantalla / 4, anchoPantalla / 2, altoPantalla / 2); // lo mismo pero con bounds en vez de location y size
 	}
 }
