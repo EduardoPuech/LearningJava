@@ -18,6 +18,8 @@ public class InformacionJava {
 		// Ejecutar = CTRL + F11
 		// Eliminar una linea de coodigo = Ctrl + D
 		// Pasar de una clase abierta a otra = Ctrl + Page Up/Down
+		// Convertir a mayuuscula = Ctrl + Shift + X
+		// Convertir a minuuscula = Ctrl + Shift + Y
 
 		/*
 		 * PACKAGE
@@ -286,6 +288,29 @@ public class InformacionJava {
 		 * Es maas costoso ya que hay que "dibujar desde coodigo" por decirlo de alguna
 		 * manera los botones y los menuus, pero al hacerlos tuu y yo dejarle al SO que
 		 * haga lo que le de la gana te aseguras de que funciona en todos lados.
+		 * 
+		 * VENTANAS/MARCOS/FRAMES:
+		 * 
+		 * Los frames nacen (por defecto) invisibles, hay que hacerlos visibles
+		 * utilizando el meetodo setVisible.
+		 * 
+		 * Nacen con un tamanno inuutil (0x0) y hay que utilizar el meetodo setSize para
+		 * darles el tamanno deseado.
+		 * 
+		 * Hay que establecer el comportamiento del cierre de un frame con el meetodo
+		 * setDefaultCloseOperation
+		 * 
+		 * El lugar predeterminado de aparicioon de una ventana es la esquina superior
+		 * izquierda de la pantalla.
 		 */
+
+	}
+}
+
+class atEnd {
+	int a = 0;
+
+	public int getA() {
+		return a;
 	}
 }
