@@ -1,6 +1,6 @@
 package primerosPasos;
 
-public class MatrizBidimensional { // https://www.youtube.com/watch?v=_tUncS0AsNE&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=25
+public class ArrayBidimensional { // https://www.youtube.com/watch?v=_tUncS0AsNE&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=25
 
 	/*
 	 * En java las matrices bidimiensionales (nxm) no existen per se, son arrays
