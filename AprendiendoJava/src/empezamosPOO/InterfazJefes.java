@@ -1,6 +1,6 @@
 package empezamosPOO;
 
-public interface Jefes extends Trabajadores { // https://www.youtube.com/watch?v=59Tpg7XbIEo&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=50
+public interface InterfazJefes extends InterfazTrabajadores { // https://www.youtube.com/watch?v=59Tpg7XbIEo&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=50
 
 	/*
 	 * los modificadores public abstract estaan por defecto en una interfaz, de

@@ -4,27 +4,27 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class InterfazInstanceOf {
+public class EmpleadoConInterfaz {
 	public static void main(String[] args) {
 
-		JefaturaInstanceOf jefeRRHH = new JefaturaInstanceOf("Alfonso", 40000, 2005, 11, 27);
+		JefaturaInterface jefeRRHH = new JefaturaInterface("Alfonso", 40000, 2005, 11, 27);
 		jefeRRHH.setIncentivo(2570);
-		EmpleadoInstanceOf[] misEmpleados = new EmpleadoInstanceOf[6];
-		misEmpleados[0] = new EmpleadoInstanceOf("Cesar de Echagüe", 25000, 2010, 03, 16);
-		misEmpleados[1] = new EmpleadoInstanceOf("Leonor de Acevedo", 25000, 2008, 01, 16);
-		misEmpleados[2] = new EmpleadoInstanceOf("Lupe de Torres", 26000, 2012, 02, 17);
-		misEmpleados[3] = new EmpleadoInstanceOf("Paca");
+		EmpleadoInterface[] misEmpleados = new EmpleadoInterface[6];
+		misEmpleados[0] = new EmpleadoInterface("Cesar de Echagüe", 25000, 2010, 03, 16);
+		misEmpleados[1] = new EmpleadoInterface("Leonor de Acevedo", 25000, 2008, 01, 16);
+		misEmpleados[2] = new EmpleadoInterface("Lupe de Torres", 26000, 2012, 02, 17);
+		misEmpleados[3] = new EmpleadoInterface("Paca");
 		misEmpleados[4] = jefeRRHH;
-		misEmpleados[5] = new JefaturaInstanceOf("Ana", 60000, 2000, 07, 15);
-		JefaturaInstanceOf jefaFinanzas = (JefaturaInstanceOf) misEmpleados[5];
+		misEmpleados[5] = new JefaturaInterface("Ana", 60000, 2000, 07, 15);
+		JefaturaInterface jefaFinanzas = (JefaturaInterface) misEmpleados[5];
 		jefaFinanzas.setIncentivo(1500);
 
-		EmpleadoInstanceOf directorComercial = new JefaturaInstanceOf("Pedro", 60000, 2020, 12, 02); // principio de sustitucioon en
+		EmpleadoInterface directorComercial = new JefaturaInterface("Pedro", 60000, 2020, 12, 02); // principio de sustitucioon en
 																						// clases
-		Comparable ejemplo = new EmpleadoInstanceOf("Eduardo", 50000, 1993, 02, 16); // principio de sustitucioon en interfaz.
+		Comparable ejemplo = new EmpleadoInterface("Eduardo", 50000, 1993, 02, 16); // principio de sustitucioon en interfaz.
 
-		if (directorComercial instanceof EmpleadoInstanceOf) { // si pertenece a la subclase se hace eso.
-			System.out.println("Es de tipo JefaturaInstanceOf"); // ya que jefatura hereda de empleado
+		if (directorComercial instanceof EmpleadoInterface) { // si pertenece a la subclase se hace eso.
+			System.out.println("Es de tipo JefaturaInterface"); // ya que jefatura hereda de empleado
 		} else {
 			System.out.println("No es instancia de Empleadoses"); // no hace falta pero lo pongo igual.
 		}
@@ -36,13 +36,13 @@ public class InterfazInstanceOf {
 			// o no, luego puedo escribirlo de manera que en caso de no serlo directamente
 			// ni lo diga, como he hecho en este caso.
 
-		for (EmpleadoInstanceOf aumento : misEmpleados) {
+		for (EmpleadoInterface aumento : misEmpleados) {
 			aumento.subidaSueldo(10);
 		}
 
 		Arrays.sort(misEmpleados);
 
-		for (EmpleadoInstanceOf impresion : misEmpleados) {
+		for (EmpleadoInterface impresion : misEmpleados) {
 			System.out.println("Nombre: " + impresion.getNombre() + " -Sueldo actual: " + impresion.getSueldo()
 					+ " -Anno de entrada en la empresa: " + impresion.getAltaContrato() + " -Id de empleado: "
 					+ impresion.getId());
@@ -50,7 +50,7 @@ public class InterfazInstanceOf {
 	}
 }
 
-class EmpleadoInstanceOf implements Comparable {
+class EmpleadoInterface implements Comparable {
 
 	private String nombre;
 	private double sueldo;
@@ -58,7 +58,7 @@ class EmpleadoInstanceOf implements Comparable {
 	private static int idSiguiente = 1;
 	private int id;
 
-	public EmpleadoInstanceOf(String nom, double sld, int anno, int mes, int dia) {
+	public EmpleadoInterface(String nom, double sld, int anno, int mes, int dia) {
 		nombre = nom;
 		sueldo = sld;
 		GregorianCalendar fecha = new GregorianCalendar(anno, mes - 1, dia);
@@ -67,7 +67,7 @@ class EmpleadoInstanceOf implements Comparable {
 		idSiguiente++;
 	}
 
-	public EmpleadoInstanceOf(String nom) {
+	public EmpleadoInterface(String nom) {
 		this(nom, 20000, 2000, 01, 01);
 	}
 
@@ -97,7 +97,7 @@ class EmpleadoInstanceOf implements Comparable {
 	}
 
 	public int compareTo(Object miObjeto) {
-		EmpleadoInstanceOf comparador = (EmpleadoInstanceOf) miObjeto;
+		EmpleadoInterface comparador = (EmpleadoInterface) miObjeto;
 		if (this.sueldo < comparador.sueldo) {
 			return -1;
 		} else if (this.sueldo > comparador.sueldo) {
@@ -108,11 +108,11 @@ class EmpleadoInstanceOf implements Comparable {
 	}
 }
 
-class JefaturaInstanceOf extends EmpleadoInstanceOf {
+class JefaturaInterface extends EmpleadoInterface {
 
 	private double incentivo;
 
-	public JefaturaInstanceOf(String nom, double sld, int anno, int mes, int dia) {
+	public JefaturaInterface(String nom, double sld, int anno, int mes, int dia) {
 		super(nom, sld, anno, mes, dia);
 	}
 

@@ -1,6 +1,6 @@
 package empezamosPOO;
 
-public interface Trabajadores {
+public interface InterfazTrabajadores {
 
 	public abstract double set_bonus(double bonus);
 

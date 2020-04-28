@@ -43,7 +43,7 @@ public class EmpleadoConInterfazPropia {
 }
 
 
-class EmpleadoInterfazPropia implements Comparable, Trabajadores {
+class EmpleadoInterfazPropia implements Comparable, InterfazTrabajadores {
 
 	private String nombre;
 	private double sueldo;
@@ -101,12 +101,12 @@ class EmpleadoInterfazPropia implements Comparable, Trabajadores {
 	}
 
 	public double set_bonus(double bonus) {
-		return Trabajadores.bonusBase + bonus;
+		return InterfazTrabajadores.bonusBase + bonus;
 	}
 }
 
 
-class JefaturaInterfazPropia extends EmpleadoInterfazPropia implements Jefes { // implemento la interfaz y
+class JefaturaInterfazPropia extends EmpleadoInterfazPropia implements InterfazJefes { // implemento la interfaz y
 																				// automaaticamente me pide que
 																				// desarrolle todos los meetodos de la
 																				// misma.
@@ -135,7 +135,7 @@ class JefaturaInterfazPropia extends EmpleadoInterfazPropia implements Jefes { /
 	// interfaz Jefes.
 	public double set_bonus(double bonus) {
 		double prima = 2000;
-		return Trabajadores.bonusBase + bonus + prima;
+		return InterfazTrabajadores.bonusBase + bonus + prima;
 //				los 1500 de la interfaz + el argumento pasado por paraametro + la prima-> una prima extra para los jefes.
 	}
 }
