@@ -1,4 +1,4 @@
-package primerosPasos;
+package empezamosPOO;
 
 import java.util.Scanner;
 

@@ -2,7 +2,7 @@ package primerosPasos;
 
 import javax.swing.*; //Este es el que me da ventanita
 
-public class PruebaEntradaJoption {
+public class EntradaJOption {
 
 	public static void main(String[] args) {
 

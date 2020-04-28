@@ -17,7 +17,7 @@ import java.util.*; //Toda el paquete "util"
  * 
  */
 
-public class IMPORTAPI {
+public class ImportClasePredefinidaAPI {
 
 	public static void main(String[] args) {
 
@@ -41,7 +41,5 @@ public class IMPORTAPI {
 		/*
 		 * NumberFormat ajusta el nuumero de decimales
 		 */
-
 	}
-
 }

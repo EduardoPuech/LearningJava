@@ -1,6 +1,6 @@
 package primerosPasos;
 
-public class PruebaMath {
+public class ClaseMath {
 	
 	public static void main(String[] args) {
 		

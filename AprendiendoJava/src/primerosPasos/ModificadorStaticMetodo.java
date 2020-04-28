@@ -1,14 +1,15 @@
 package primerosPasos;
 
-public class MetodoStatic { // https://www.youtube.com/watch?v=V0wIZ-OglsY&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=38
+public class ModificadorStaticMetodo { // https://www.youtube.com/watch?v=V0wIZ-OglsY&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=38
 
 	// Utilizo el coodigo sin comentarios de ConceptoFinalStatic
 
-	// El concepto del static para los meetodos es el mismo que para las variables.
-	// los meetodos static no pueden acceder a las variables de clase a no ser que
-	// la variable tambieen sea static.
-	// no actuan sobre objetos
-	// hay que dar el NombreClase.meetodo para usarlos (clase Math es un buen ejemplo)
+	/*
+	 * El concepto del static para los meetodos es el mismo que para las variables.
+	 * los meetodos static no pueden acceder a las variables de clase a no ser que
+	 * la variable tambieen sea static. no actuan sobre objetos hay que dar el
+	 * NombreClase.meetodo para usarlos (clase Math es un buen ejemplo)
+	 */
 
 	public static void main(String[] args) { // el meetodo main es STATIC porque ya que todo programa de java al empezar
 												// a ejecutarse empieza por eel. Como a la hora de empezar no existe
@@ -18,26 +19,25 @@ public class MetodoStatic { // https://www.youtube.com/watch?v=V0wIZ-OglsY&list=
 												// podriia llamar pero no usar.
 		// a su vez, el meetodo main recibe un array de tipo String con nombre args
 
-		Empleados empleado1 = new Empleados("Carlos");
-		Empleados empleado2 = new Empleados("Ana");
-		Empleados empleado3 = new Empleados("Cristina");
-		Empleados empleado4 = new Empleados("Pedro");
+		EmpleadoStaticMetodo empleado1 = new EmpleadoStaticMetodo("Carlos");
+		EmpleadoStaticMetodo empleado2 = new EmpleadoStaticMetodo("Ana");
+		EmpleadoStaticMetodo empleado3 = new EmpleadoStaticMetodo("Cristina");
+		EmpleadoStaticMetodo empleado4 = new EmpleadoStaticMetodo("Pedro");
 		empleado1.setSeccion("Informaatica");
 		System.out.println(empleado1.getEmpleado() + "\n" + empleado2.getEmpleado() + "\n" + empleado3.getEmpleado()
 				+ "\n" + empleado4.getEmpleado());
-		System.out.println(Empleados.getSiguienteId()); // al ser static se utiliza el nombre de la clase
+		System.out.println(EmpleadoStaticMetodo.getSiguienteId()); // al ser static se utiliza el nombre de la clase
 	}
-
 }
 
-class Empleados {
+class EmpleadoStaticMetodo {
 
 	private final String nombre;
 	private String seccion;
 	private int id;
 	private static int idSiguiente = 1;
 
-	public Empleados(String nom) {
+	public EmpleadoStaticMetodo(String nom) {
 		nombre = nom;
 		seccion = "Administracioon";
 		id = idSiguiente;

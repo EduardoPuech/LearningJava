@@ -1,6 +1,6 @@
 package primerosPasos;
 
-public class ConceptoFinalStatic {
+public class ModificadoresFinalStatic {
 
 	/*
 	 * Aquii voy a demostrar y explicar la utilizacioon de FINAL y de STATIC, para
@@ -32,23 +32,23 @@ public class ConceptoFinalStatic {
 
 	public static void main(String[] args) {
 
-		EmpleadoFinalStatic EmpleadoFinalStatic1 = new EmpleadoFinalStatic("Carlos"); // creo el objeto EmpleadoFinalStatic
-		EmpleadoFinalStatic EmpleadoFinalStatic2 = new EmpleadoFinalStatic("Ana"); // creo el objeto EmpleadoFinalStatic
-		EmpleadoFinalStatic EmpleadoFinalStatic3 = new EmpleadoFinalStatic("Cristina");
-		EmpleadoFinalStatic EmpleadoFinalStatic4 = new EmpleadoFinalStatic("Pedro");
+		EmpleadoFinalStatic empleadoFinalStatic1 = new EmpleadoFinalStatic("Carlos"); // creo el objeto EmpleadoFinalStatic
+		EmpleadoFinalStatic empleadoFinalStatic2 = new EmpleadoFinalStatic("Ana"); // creo el objeto EmpleadoFinalStatic
+		EmpleadoFinalStatic empleadoFinalStatic3 = new EmpleadoFinalStatic("Cristina");
+		EmpleadoFinalStatic empleadoFinalStatic4 = new EmpleadoFinalStatic("Pedro");
 //		System.out.println(EmpleadoFinalStatic1.getEmpleadoFinalStatic()); // veo las caracteriisticas predeterminadas
-		EmpleadoFinalStatic1.setSeccion("Informaatica"); // lo muevo a un nuevo departamento
+		empleadoFinalStatic1.setSeccion("Informaatica"); // lo muevo a un nuevo departamento
 //	EmpleadoFinalStatic2.setNombre("Fernanda"); // al dejar de funcionar el meetodo ya no puedo usarlo
 //	ahora bien, un EmpleadoFinalStatic no se puede cambiar el nombre, aunque el coodigo lo
 //	permita y exista un meetodo que lo haga no deberiia poder hacerse. Para esto
 //	es para lo que sirve el final:-------------------------------------------->
-		System.out.println(EmpleadoFinalStatic1.getEmpleadoFinalStatic()); // vuelvo a ver las caracteriisticas
+		System.out.println(empleadoFinalStatic1.getEmpleadoFinalStatic()); // vuelvo a ver las caracteriisticas
 ///		EmpleadoFinalStatic.id++; // tiene que estar despuees del primero para que haga la actualizacioon a partir
 ///						// de este, si hubiese un tercero lo pondriia tambieen entre el segundo y el
 ///						// tercero
-		System.out.println(EmpleadoFinalStatic2.getEmpleadoFinalStatic());
-		System.out.println(EmpleadoFinalStatic3.getEmpleadoFinalStatic());
-		System.out.println(EmpleadoFinalStatic4.getEmpleadoFinalStatic());
+		System.out.println(empleadoFinalStatic2.getEmpleadoFinalStatic());
+		System.out.println(empleadoFinalStatic3.getEmpleadoFinalStatic());
+		System.out.println(empleadoFinalStatic4.getEmpleadoFinalStatic());
 	}
 
 }

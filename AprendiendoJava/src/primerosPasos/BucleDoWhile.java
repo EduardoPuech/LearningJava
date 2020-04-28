@@ -25,17 +25,12 @@ public class BucleDoWhile {
 		int numeros = 0;
 
 		do {
-
 			numero = Integer.parseInt(JOptionPane.showInputDialog("Introduzca un nuumero")); //cambio numero
 			numeros++;
-
 			if (numero > varibleParaDo) {
-
 				System.out.println("Menos " + numero);
-
 			} else if (numero < varibleParaDo) {
 				System.out.println("Maas " + numero);
-
 			}
 		} while (varibleParaDo != numero);
 		System.out.println("Vaya genio, has utilizado " + numeros + " intentos y el nuumero era " + varibleParaDo);

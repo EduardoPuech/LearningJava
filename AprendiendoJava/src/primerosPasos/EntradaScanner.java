@@ -2,7 +2,7 @@ package primerosPasos;
 
 import java.util.*;
 
-public class PruebaEntradaScanner {
+public class EntradaScanner {
 
 	public static void main(String[] args) {
 

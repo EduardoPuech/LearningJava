@@ -26,13 +26,11 @@ public class PesoIdeal {
 		} while (valor.equalsIgnoreCase("H") == false && valor.equalsIgnoreCase("M") == false); // utilizo IgnoreCase
 																								// para que no tenga que
 																								// ser en mayuuscula
-
 		if (valor.equalsIgnoreCase("H")) { // si es hombre aplica la ecuacioon del hombre
 			System.out.println("Introduzca su altura en cm");
 			// Scanner input2 = new Scanner(System.in); NO HACE FALTA crear otro input, se
 			// repite por local
 			pesoIdeal = input.nextInt() - 110; // recordar que puedo meter esto directamente en el print
-
 		} else { // para todo otro caso salta esto, como solo le he dado opcioon de h o m porque
 					// si me dan otra cosa se reinicia el bucle no necesito un else if que
 					// especifique que tenga que ser m

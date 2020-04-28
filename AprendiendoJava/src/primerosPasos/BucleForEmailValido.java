@@ -2,7 +2,7 @@ package primerosPasos;
 
 import java.util.*;
 
-public class EmailValidoFor {
+public class BucleForEmailValido {
 
 	/*
 	 * TODO Crear un programa que compruebe si la direccioon de correo electroonico
@@ -36,18 +36,13 @@ public class EmailValidoFor {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in); // creo la entrada por consola
-
 		System.out.println("Introduzca su direccioon de correo"); // texto para empezar a interactuar
-
 		String texto = input.nextLine(); // almaceno la entrada por consola para poder hacer comparaciones
-
 		char vacio = ' '; // para asegurarme de que no hay ninguun espacio
-
 		boolean condArroba = false; // variable que utilizo como condicioon para el if final, se actualiza en cada
 		// bucle (si entra)
 		boolean condPunto = false; // variable para la condicioon punto
 		boolean condEspacio = true; // variable para la condicioon de espacios
-
 		int longitud = texto.length(); // longitud del correo introducido para saber cuaanto tiene que durar el bucle
 		int salidaBucle = 0; // condicion salida de bucle para da valor en aambito local a contarDesde
 		int contarDesde = 0; // variable utilizada para guardar la posicioon desde la que tengo que empezar a
@@ -59,18 +54,14 @@ public class EmailValidoFor {
 			// hacer el primero hasta el final
 			// no pongo longitud-1 ya que al ser un menor absoluto la posicioon no llega
 			// hasta eel
-
 			if (texto.charAt(i) == '@') { // comparo cada posicioon del bucle con un @
-
 				condArroba = true; // si lo encuentro cambio el arroba para que al final salga vaalido (se cumple
 									// la primera condicioon)
 				contarDesde = i; // utilizo esta variable para la comprobacioon de si hay maas arrobas
-
 				// con este busco si hay alguun arroba o espacio despues del primero
 				for (i = contarDesde + 1; i < (longitud); i++) { // empieza a contar desde el
 																	// anterior
 					if (texto.charAt(i) == '@') { // vuelvo a comparar
-
 						condArroba = false; // si hay maas de un arroba arroba vuelve a false para que vuelva a ser
 											// email incorrecto
 					}
@@ -80,29 +71,20 @@ public class EmailValidoFor {
 
 		// este genera la posicioon desde la que voy a buscar el punto
 		for (int j = 0; j < (longitud) && salidaBucle != 1; j++) {
-
 			if (texto.charAt(j) == '@') {
-
 				salidaBucle++;
 				contarDesde = j; // variable donde guardaba la posicioon de buusqueda
-
 			}
 
 			// este busca, a partir del @ (contarDesde), si hay un punto, misma estructura
 			// que el @
 			for (j = contarDesde + 1; j < (longitud); j++) {
-
 				if (texto.charAt(j) == '.') {
-
 					condPunto = true;
 					contarDesde = j;// actualizo la posicioon de inicio a donde estaa el punto
-
 					for (j = contarDesde + 1; j < (longitud); j++) {
-
 						if (texto.charAt(j) == '.') {
-
 							condPunto = false;
-
 						}
 					}
 				}
@@ -111,9 +93,7 @@ public class EmailValidoFor {
 
 		// este busca espacios
 		for (int i = 0; i < longitud; i++) { // como i es local a cada bucle puedo usarla tantas veces como guste
-
 			if (texto.charAt(i) == vacio) {
-
 				condEspacio = false;
 			}
 		}
@@ -123,18 +103,14 @@ public class EmailValidoFor {
 			// si el primer o el uultimo valor es . oo @ no es vaalida
 			// va al final porque si no los bucles me cambian el valor
 			condArroba = false;
-
 		}
 
 		if (condArroba == false || condPunto == false || condEspacio == false) { // si alguna de las condiciones falla
 																					// no es vaalida
-
 			System.out.println("Direccioon de correo no vaalida");
 
 		} else {
-
 			System.out.println("Direccioon de correo vaalida");
-
 		}
 	}
 }

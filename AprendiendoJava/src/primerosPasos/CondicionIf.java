@@ -40,7 +40,6 @@ public class CondicionIf {
 		int edad = input.nextInt(); // no meto nada en el parentesis, ese valor es el que entra por consola
 		
 		if (edad >= mayorEdad) { // condicioon para que se ejecute lo que estaa dentro
-			
 			System.out.println("Disfrute de las copichuelas");
 		} else {
 			System.out.println("Vuelve cuando tengas barba");
@@ -63,5 +62,4 @@ public class CondicionIf {
 			System.out.println("Utilice la puerta de la izquierda");
 		}
 	}
-
 }

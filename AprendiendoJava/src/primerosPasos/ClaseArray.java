@@ -1,6 +1,6 @@
 package primerosPasos;
 
-public class MatricesArraysArreglos { // https://www.youtube.com/watch?v=UID_EKKfpcE&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=23
+public class ClaseArray { // https://www.youtube.com/watch?v=UID_EKKfpcE&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=23
 
 	/*
 	 * Matriz, array y arreglo es lo mismo, en distintos sitios se usa una cosa u
@@ -54,7 +54,6 @@ public class MatricesArraysArreglos { // https://www.youtube.com/watch?v=UID_EKK
 
 		// con bucle recorre toda la matriz
 		for (int i = 0; i < 5; i++) {
-
 			System.out.println("El valor del iindice " + i + " es " + miMatriz[i]);
 		}
 
@@ -62,9 +61,7 @@ public class MatricesArraysArreglos { // https://www.youtube.com/watch?v=UID_EKK
 		int[] miMatriz2 = { 7, 19, 57, -12, 90 };
 
 		for (int i = 0; i < 5; i++) {
-
 			System.out.println("El valor del iindice " + i + " es " + miMatriz2[i]);
 		}
 	}
-
 }

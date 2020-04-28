@@ -110,6 +110,26 @@ public class InformacionJava {
 		 * Biblioteca de clases o API de java (banco donde estaan todas las clases
 		 * predeterminadas. Se accede a travees del navegador
 		 * https://docs.oracle.com/javase/8/docs/api/
+		 */
+		
+		/*
+		 * OPERADORES
+		 * 
+		 * Aritmeeticos suma: + resta: - multiplicacioon: * divisioon: /
+		 * 
+		 * Loogicos, Relacionales y Booleanos
+		 * 
+		 * mayor que: > menor que: < mayor o menor que:<> distinto: != igual que: == y
+		 * loogico: && o loogico: ||
+		 * 
+		 * Incremento y decremento
+		 * 
+		 * incremento: ++ (incrementa en 1 al valor al que se le aplica) decremento: --
+		 * incremento alternativo: += nº decremento alternativo: -=
+		 * 
+		 * Concatenaciones
+		 * 
+		 * + (une o concatena, se diferencia de la suma por contexto y sintaaxis)
 		 * 
 		 */
 
@@ -176,6 +196,31 @@ public class InformacionJava {
 		 * El Enlazado Dinaamico es el proceso automaatico por el cual el interprete de
 		 * java/maaquina virtual/compilador sabe, en un caso de polimorfismo, a quee
 		 * clase estaa haciendo referencia en cada momento en el tiempo de ejecucioon.
+		 */
+
+		/*
+		 * MODIFICADORES: https://www.youtube.com/watch?v=eQWnegzD6ug&list=
+		 * PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=47
+		 * 
+		 * 
+		 * De acceso: PUBLIC (se puede usar desde la propia clase, el mismo paquete,
+		 * subclases tanto dentro como fuera del propio paquete y clases tanto dentro
+		 * como fuera del propio paquete). PRIVATE (se puede usar desde la propia clase,
+		 * no se puede usar en el mismo paquete, ni subclases tanto dentro como fuera
+		 * del propio paquete, ni otras clases tanto dentro como fuera del propio
+		 * paquete). PROTECTED (se puede usar desde la propia clase, el mismo paquete,
+		 * subclases tanto dentro como fuera del propio paquete pero no se puede usar
+		 * desde otra clase que no sea subclase y estee en otro paquete) y el
+		 * MODIFICADOR POR DEFECTO: no poner nada (se puede usar desde la propia clase,
+		 * el mismo paquete, subclases dentro del propio paquete y no se puede usar en
+		 * subclases fuera del paquete, ni clases tanto dentro como fuera del propio
+		 * paquete).
+		 * 
+		 * aambito: static. Tanto para variables como para meetodos (hace que se pueda,
+		 * o no, utilizar en toda la clase). No se pueden crear meetodos que llamen a la
+		 * variable estaatica, hay que utilizar el nombre de la clase: Clase.variable++;
+		 * 
+		 * "alterabilidad": final (variable o constante)
 		 */
 
 		/*

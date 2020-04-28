@@ -2,7 +2,7 @@ package primerosPasos;
 
 import javax.swing.JOptionPane;
 
-public class CodigoPrueba {
+public class CodigoParaPruebas {
 
 	public static void main(String[] args) {
 
