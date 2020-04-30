@@ -35,7 +35,7 @@ class LaminaConG2D extends JPanel {
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-//		 // Hasta aquii es igua que FrameConFigura
+///		 // Hasta aquii es igua que FrameConFigura
 		// para utilizar un objeto de tipo Graphics2D CASTEO:
 		Graphics2D g2 = (Graphics2D) g;
 		// utilizo la clase Rectangle2D.double para instanciar un objeto
@@ -72,13 +72,11 @@ class LaminaConG2D extends JPanel {
 		 * donde estaan el centro en x y en y: eso lo meto en dos variables y se lo paso
 		 * al ciirculo como punto central:
 		 */
-
 		double centroX = rectangulo1.getCenterX(); // si quiero puedo castear a int
 		double centroY = rectangulo1.getCenterY();
 		double radio = 150; // cojo el alto del rectaangulo como radio
 		Ellipse2D circulo = new Ellipse2D.Double();
 		circulo.setFrameFromCenter(centroX, centroY, centroX + radio, centroY + radio);
 		g2.draw(circulo);
-
 	}
 }
