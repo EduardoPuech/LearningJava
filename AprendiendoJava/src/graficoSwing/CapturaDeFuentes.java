@@ -1,6 +1,9 @@
 package graficoSwing;
 
+import java.awt.Dimension;
 import java.awt.GraphicsEnvironment;
+import java.awt.Toolkit;
+import java.awt.*;
 
 import javax.swing.*;
 
@@ -8,24 +11,76 @@ public class CapturaDeFuentes {
 	/*
 	 * TODO: este programa es una ayuda que me va a servir para saber quee tipos de
 	 * fuentes estaan instaladas en el PC que estoy usando. Para ello voy a utilizar
-	 * la clase GraphicsEnvironment
+	 * la clase GraphicsEnvironment. Ademaas voy a hacer primero una ventana en la
+	 * que se escriban todos los nombres de las instaladas y luego va a tener un
+	 * buscador en el que si ya me see el nombre me indique si estaa instalada o no.
 	 */
 	public static void main(String[] args) {
 
+		FrameConFuentes frameFuente = new FrameConFuentes();
+		frameFuente.setTitle("Listado de fuentes instaladas en el PC");
+
+		String[] nombresDeFuentes = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 		String fuente = JOptionPane.showInputDialog("Introduce fuente");
 		boolean comprueboFuente = false;
-		String[] nombresDeFuentes = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 
 		for (String i : nombresDeFuentes) {
 			if (i.equalsIgnoreCase(fuente)) {
 				comprueboFuente = true;
 			}
 		}
-		
+
 		if (comprueboFuente) {
-			System.out.println("Fuente instalada");
+			JOptionPane.showMessageDialog(null, "Fuente instalada");
 		} else {
-			System.out.println("No estaa instalada dicha fuente");
+			JOptionPane.showMessageDialog(null, "No estaa instalada dicha fuente");
+		}
+	}
+
+}
+
+// Con esta clase voy a crear un Frame en el que voy a pintar la lista de todas
+// las fuentes que hay instaladas en la maaquina. Si no se entiende alguna parte
+// del codigo referir a CreandoFrameCentradoToolkit
+class FrameConFuentes extends JFrame {
+
+	int screenHeight;
+	int screenWidth;
+
+	public FrameConFuentes() {
+		Toolkit myScreen = Toolkit.getDefaultToolkit();
+		Dimension screenSize = myScreen.getScreenSize();
+
+		screenHeight = screenSize.height; // aquii meto solo la altura
+		screenWidth = screenSize.width;
+
+		setVisible(true);
+		setSize(400, 1000);
+		setLocation(200, 40);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		LaminaConFuentes laminaFuentes = new LaminaConFuentes();
+		add(laminaFuentes);
+	}
+
+}
+
+class LaminaConFuentes extends JPanel {
+
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.drawString("Lista de fuentes:", 10, 15);
+
+		String[] nombresDeFuentes = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+
+		int salto = 15;
+		int ancho = 15;
+		int altoInicial = 30;
+
+		for (String i : nombresDeFuentes) {
+			g.drawString(i, ancho, altoInicial);
+			altoInicial = altoInicial + salto;
+
 		}
 	}
 }
