@@ -35,7 +35,7 @@ class LaminaWithImages extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 
-		File foto1 = new File("src/empezamosPOO/graficoSwing/imagen2.bmp"); // read pide un paraametro de tipo file
+		File foto1 = new File("src/graficoSwing/imagen2"); // read pide un paraametro de tipo file
 																			// que es la ruta de ubicacioon del
 																			// archivo
 		// de momento esto lo vamos a tomar como dogma y ya entenderemos en su momento:
