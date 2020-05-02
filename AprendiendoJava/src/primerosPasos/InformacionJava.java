@@ -111,7 +111,7 @@ public class InformacionJava {
 		 * predeterminadas. Se accede a travees del navegador
 		 * https://docs.oracle.com/javase/8/docs/api/
 		 */
-		
+
 		/*
 		 * OPERADORES
 		 * 
@@ -347,6 +347,21 @@ public class InformacionJava {
 		 * 
 		 * El lugar predeterminado de aparicioon de una ventana es la esquina superior
 		 * izquierda de la pantalla.
+		 */
+
+		/*
+		 * EXCEPCIONES
+		 * 
+		 * Son fallos en tiempo de ejecucioon.
+		 * 
+		 * Cuando un meetodo arroja excepcioon lo que ocurre es que requiere que se
+		 * programe quee tiene que hacer en caso de que ese error ocurra para que el
+		 * programa no se quede enganchado como si fuese idiota.
+		 * 
+		 * En el ejemplo del FrameConImagenes, cuando usamos read() puede ser que
+		 * hayamos escrito mal la direccioon de la imagen o que la imagen haya cambiado
+		 * de sitio, y por lo tanto tenemos que escribir quee tiene que hacer en caso de
+		 * no encontrarla.
 		 */
 
 	}
