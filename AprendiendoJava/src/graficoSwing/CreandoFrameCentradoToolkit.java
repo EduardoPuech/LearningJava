@@ -58,7 +58,7 @@ class FrameCentrado extends JFrame {
 
 //		setBounds(anchoPantalla / 4, altoPantalla / 4, anchoPantalla / 2, altoPantalla / 2); // lo mismo pero con bounds en vez de location y size
 
-		Image myIcon = miPantalla.getImage("src/graficoSwing/icono.gif");
+		Image myIcon = miPantalla.getImage("src/graficoSwing/icono.gif"); // el *.tipoArchivo es necesario
 		setIconImage(myIcon);
 	}
 }

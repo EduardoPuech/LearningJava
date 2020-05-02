@@ -35,8 +35,8 @@ class LaminaWithImages extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 
-		File foto1 = new File("src/graficoSwing/imagen1.jpg"); // read pide un paraametro de tipo file que es la ruta de
-																// ubicacioon del archivo
+		File foto1 = new File("src/graficoSwing/imagenSinCorona.jpg"); // read pide un paraametro de tipo file que es la ruta de
+																// ubicacioon del archivo con *.*
 		// de momento esto lo vamos a tomar como dogma y ya entenderemos en su momento:
 		try {
 			imagen = ImageIO.read(foto1); // da error hasta que escriba el coodigo de la excepcioon
