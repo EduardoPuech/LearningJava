@@ -36,7 +36,7 @@ class LaminaWithImages extends JPanel {
 		super.paintComponent(g);
 
 		File foto1 = new File("src/graficoSwing/imagenSinCorona.jpg"); // read pide un paraametro de tipo file que es la ruta de
-																// ubicacioon del archivo con *.*
+																// ubicacioon del archivo con *.*	 
 		// de momento esto lo vamos a tomar como dogma y ya entenderemos en su momento:
 		try {
 			imagen = ImageIO.read(foto1); // da error hasta que escriba el coodigo de la excepcioon
@@ -44,7 +44,7 @@ class LaminaWithImages extends JPanel {
 			JOptionPane.showMessageDialog(null, "Imagen no encontrada");
 		}
 
-		g.drawImage(imagen, 10, 15, null); // pongo el observador de tipo null ya que el tamanno de esta imagen no
+		g.drawImage(imagen, 10, 10, null); // pongo el observador de tipo null ya que el tamanno de esta imagen no
 											// conllevaraa un tiempo de carga elevado.
 	}
 
