@@ -20,7 +20,7 @@ public class FrameConImagenes { // https://www.youtube.com/watch?v=4J-10RpxK_w&l
 class FrameWithImages extends JFrame { // caca
 
 	public FrameWithImages() {
-		setBounds(750, 300, 400, 300);
+		setBounds(750, 300, 400, 350);
 		setTitle("Trabajando con imaagenes");
 
 		LaminaWithImages laminaImagen = new LaminaWithImages();
@@ -35,9 +35,8 @@ class LaminaWithImages extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 
-		File foto1 = new File("src/graficoSwing/imagen2"); // read pide un paraametro de tipo file
-																			// que es la ruta de ubicacioon del
-																			// archivo
+		File foto1 = new File("src/graficoSwing/imagen1.jpg"); // read pide un paraametro de tipo file que es la ruta de
+																// ubicacioon del archivo
 		// de momento esto lo vamos a tomar como dogma y ya entenderemos en su momento:
 		try {
 			imagen = ImageIO.read(foto1); // da error hasta que escriba el coodigo de la excepcioon
