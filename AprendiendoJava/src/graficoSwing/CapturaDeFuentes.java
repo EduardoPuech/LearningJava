@@ -4,6 +4,13 @@ import java.awt.Dimension;
 import java.awt.GraphicsEnvironment;
 import java.awt.Toolkit;
 import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.GridBagLayout;
+import java.awt.RenderingHints;
 
 import javax.swing.*;
 
@@ -19,6 +26,9 @@ public class CapturaDeFuentes {
 
 		FrameConFuentes frameFuente = new FrameConFuentes();
 		frameFuente.setTitle("Listado de fuentes instaladas en el PC");
+		
+		JScrollPane barraScroll = new JScrollPane();
+		barraScroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
 		String[] nombresDeFuentes = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 		String fuente = JOptionPane.showInputDialog("Introduce fuente");
@@ -55,7 +65,7 @@ class FrameConFuentes extends JFrame {
 		screenWidth = screenSize.width;
 
 		setVisible(true);
-		setSize(400, 1000);
+		setSize(350, 500);
 		setLocation(200, 40);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -80,7 +90,23 @@ class LaminaConFuentes extends JPanel {
 		for (String i : nombresDeFuentes) {
 			g.drawString(i, ancho, altoInicial);
 			altoInicial = altoInicial + salto;
-
 		}
+		/*
+		JScrollPane scrollPane = new JScrollPane(new LongImagePanel(),
+	            JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
+	            JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		setLayout(new BorderLayout());
+	      add(scrollPane, BorderLayout.PAGE_END);*/
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
