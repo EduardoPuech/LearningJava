@@ -1,6 +1,6 @@
 package primerosPasos;
 
-public class InformacionJava {
+public class DocumentacionJava {
 
 	public static void main(String[] args) {
 
@@ -8,7 +8,7 @@ public class InformacionJava {
 
 		// ACCESOS DIRECTOS
 
-		// Autotabulacioon = Ctrl + º; Lo cambie desde el original: Ctrl + Shift + F.
+		// Autotabulacioon = Ctrl + ï¿½; Lo cambie desde el original: Ctrl + Shift + F.
 		// Autocompletar = Ctrl + barra espaciadora,
 		// Autoimportar = Ctrl + Shift + O.
 		// Comentar una linea ya escrita = Ctrl + /
@@ -125,7 +125,7 @@ public class InformacionJava {
 		 * Incremento y decremento
 		 * 
 		 * incremento: ++ (incrementa en 1 al valor al que se le aplica) decremento: --
-		 * incremento alternativo: += nº decremento alternativo: -=
+		 * incremento alternativo: += nï¿½ decremento alternativo: -=
 		 * 
 		 * Concatenaciones
 		 * 
@@ -169,7 +169,7 @@ public class InformacionJava {
 		 * NO SE PUEDE HEREDAR DE MAAS DE UNA CLASE.
 		 * 
 		 * La regla de utilizacioon de la herencia consiste en responder a la premisa
-		 * baasica: ¿subclase ES SIEMPRE UN superclase?... a nuestro teermino de clases.
+		 * baasica: ï¿½subclase ES SIEMPRE UN superclase?... a nuestro teermino de clases.
 		 * 
 		 * Una clase y un meetodo tambieen pueden ser final. Cuando una clase es final,
 		 * acaba con el concepto de la herencia: no se permite hacer subclases de esa
@@ -326,7 +326,7 @@ public class InformacionJava {
 		 * INTERFACES DE USUARIO: SWING
 		 * 
 		 * El paquete original de interfaces de Java AWT delegaba el comportamiento de
-		 * la interfaz al S.O. huésped. Dado que eso haciia que en cada S.O. se portase
+		 * la interfaz al S.O. huï¿½sped. Dado que eso haciia que en cada S.O. se portase
 		 * de una manera y hubiese que comprobar el coodigo en cada uno se creoo el
 		 * paquete SWING que pinta los elementos de la interfaz sobre una ventana.
 		 * 
